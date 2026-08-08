@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apogee Open Source · GitHub</title>
+  <title>Apogee on GitHub</title>
   <meta name="description" content="Open-source tools from Apogee Information Systems — PageSpeed Watcher and Website 404 Redirects on GitHub." />
   <meta name="theme-color" content="#ff6633" />
   <meta name="author" content="Apogee Information Systems" />
   <link rel="canonical" href="https://apogee.lu/github/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://apogee.lu/github/" />
-  <meta property="og:title" content="Apogee Open Source · GitHub" />
+  <meta property="og:title" content="Apogee on GitHub" />
   <meta property="og:description" content="Open-source tools from Apogee Information Systems — PageSpeed Watcher and Website 404 Redirects." />
   <meta property="og:site_name" content="Apogee Information Systems" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Apogee Open Source · GitHub" />
+  <meta name="twitter:title" content="Apogee on GitHub" />
   <meta name="twitter:description" content="Open-source tools from Apogee Information Systems — PageSpeed Watcher and Website 404 Redirects." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -148,6 +148,14 @@
       color: var(--muted);
       margin: 0 0 4px;
     }
+    .col-sub {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 8px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
 
     .body-copy {
       font-size: clamp(13px, 1.05vw, 15px);
@@ -271,7 +279,6 @@
   <main>
     <section class="section" id="open-source" data-od-id="section-open-source">
       <div class="wrap">
-        <p class="section-kicker">// Open source</p>
         <h1 class="h-xl" data-od-id="page-title">
           <span class="accent-bar" aria-hidden="true"></span>
           <span class="title-text">Apogee on GitHub</span>
@@ -297,7 +304,7 @@
           </div>
 
           <div class="col-stack" data-od-id="col-packages">
-            <p class="col-label">// Packages</p>
+            <p class="col-label">// Open source packages</p>
 
             <article class="pt product" data-od-id="repo-pagespeed">
               <p class="pt-idx">01</p>
@@ -314,6 +321,24 @@
               <p>Log public 404 paths and manage 301 redirects from a database table for Laravel 11/12 — keep broken URLs visible and fix them without redeploying hard-coded maps.</p>
               <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener" data-od-id="repo-404-link">View on GitHub</a>
             </article>
+
+            <div class="col-sub" data-od-id="col-developer-tools">
+              <p class="col-label">// Developer Tools</p>
+
+              <article class="pt product" data-od-id="tool-watcher">
+                <p class="pt-idx">01</p>
+                <h3>Apogee Watcher</h3>
+                <p>Automated PageSpeed monitoring for agencies and freelancers. Track Core Web Vitals and CrUX field data, set performance budgets, get actionable fix suggestions, and share white-label reports — built for multi-client portfolios.</p>
+                <a class="btn-secondary" href="https://apogeewatcher.com/" target="_blank" rel="noopener" data-od-id="tool-watcher-link">Read more</a>
+              </article>
+
+              <article class="pt product" data-od-id="tool-mailops">
+                <p class="pt-idx">02</p>
+                <h3>MailOps</h3>
+                <p>Extends Modoboa with server observability, mailbox and domain analytics, and advanced delivery troubleshooting — monitor mail-server health and turn failed deliveries into actionable SMTP, SPF, DKIM and DMARC diagnostics.</p>
+                <a class="btn-secondary" href="https://apogee.lu/mailops.html" data-od-id="tool-mailops-link">Read more</a>
+              </article>
+            </div>
           </div>
         </div>
 
