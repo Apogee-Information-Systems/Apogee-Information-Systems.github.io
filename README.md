@@ -2,8 +2,6 @@
 
 Open-source tools and developer resources from [Apogee Information Systems](https://apogee.lu/).
 
-This repository hosts the public GitHub org landing page ([apogee.lu/github](https://apogee.lu/github/)).
-
 ## Open-source packages
 
 | Package | Description |
@@ -14,7 +12,7 @@ This repository hosts the public GitHub org landing page ([apogee.lu/github](htt
 ## Developer tools
 
 - **[Apogee Watcher](https://apogeewatcher.com/)** — PageSpeed monitoring for agencies and freelancers (Core Web Vitals, CrUX, budgets, white-label reports)
-- **MailOps** — Modoboa extension for mail-server observability and delivery diagnostics
+- **[MailOps](https://apogee.lu/mailops.html)** — Modoboa extension for mail-server observability and delivery diagnostics
 
 ## Links
 
