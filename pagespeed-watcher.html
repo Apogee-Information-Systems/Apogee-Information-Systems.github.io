@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PageSpeed Watcher — Apogee on GitHub</title>
+  <meta name="description" content="Laravel package for Google PageSpeed Insights checks — CLI validation, usage tracking, and scheduled performance tests." />
+  <meta name="theme-color" content="#ff6633" />
+  <meta name="author" content="Apogee Information Systems" />
+  <link rel="canonical" href="https://apogee-information-systems.github.io/pagespeed-watcher.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apogee-information-systems.github.io/pagespeed-watcher.html" />
+  <meta property="og:title" content="PageSpeed Watcher — Apogee on GitHub" />
+  <meta property="og:description" content="Open-source Laravel package to run Google PageSpeed Insights checks for your app pages." />
+  <meta property="og:site_name" content="Apogee Information Systems" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="PageSpeed Watcher — Apogee on GitHub" />
+  <meta name="twitter:description" content="Open-source Laravel package to run Google PageSpeed Insights checks for your app pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://analytics.apogee.gr/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '11']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="nav-brand" href="index.html" aria-label="Apogee home">
+      <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
+    </a>
+    <nav class="nav-menu" aria-label="Main">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link is-active" href="pagespeed-watcher.html" aria-current="page">PageSpeed Watcher</a>
+      <a class="nav-link" href="website-404-redirects.html">404 Redirects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker">// Open source package</p>
+        <h1 class="h-xl">
+          <span class="accent-bar" aria-hidden="true"></span>
+          <span class="title-text">PageSpeed Watcher</span>
+        </h1>
+        <p class="repo-path package-intro">Apogee-Information-Systems / pagespeed-watcher</p>
+
+        <div class="package-layout">
+          <div class="content-panel">
+            <p class="body-copy">
+              Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages. Validate API connectivity, track daily usage, and schedule performance tests — all from Artisan commands and a ready-made database schema.
+            </p>
+            <div class="page-actions">
+              <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="col-label">// Features</p>
+            <div class="content-panel">
+              <ul class="feature-list">
+                <li>CLI commands for API validation and page performance tests</li>
+                <li>Daily usage tracking with cost estimates beyond the free tier</li>
+                <li>Configurable rate limits, timeouts, and performance score thresholds</li>
+                <li>Database schema for pages, test results, settings, and API usage</li>
+                <li>Scheduled daily tests with URL discovery support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <p class="col-label">// Quick start</p>
+            <pre class="code-block"><code>composer require apogee/laravel-pagespeed-watcher
+
+php artisan vendor:publish --tag=watcher-config
+php artisan vendor:publish --tag=watcher-migrations
+php artisan migrate
+
+php artisan watcher:test-page
+php artisan watcher:usage</code></pre>
+          </div>
+
+          <div>
+            <p class="col-label">// Commands</p>
+            <div class="content-panel">
+              <h2 class="h-section">watcher:test-page</h2>
+              <p class="body-copy">Run a PageSpeed Insights test to validate API connectivity and analyze page performance. Supports <code>--strategy=mobile|desktop</code> and <code>--url=</code> options.</p>
+              <h2 class="h-section" style="margin-top: 20px;">watcher:usage</h2>
+              <p class="body-copy">Monitor your PageSpeed Insights API usage — today's totals and the last seven days with cost estimates.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="site-foot">
+          APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
