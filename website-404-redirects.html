@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website 404 Redirects — Apogee on GitHub</title>
+  <meta name="description" content="Laravel 11/12 package to log 404 paths and manage 301 redirects from the database." />
+  <meta name="theme-color" content="#ff6633" />
+  <meta name="author" content="Apogee Information Systems" />
+  <link rel="canonical" href="https://apogee-information-systems.github.io/website-404-redirects.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apogee-information-systems.github.io/website-404-redirects.html" />
+  <meta property="og:title" content="Website 404 Redirects — Apogee on GitHub" />
+  <meta property="og:description" content="Log public 404 paths and manage 301 redirects from a database table for Laravel 11 and 12." />
+  <meta property="og:site_name" content="Apogee Information Systems" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Website 404 Redirects — Apogee on GitHub" />
+  <meta name="twitter:description" content="Log public 404 paths and manage 301 redirects from a database table for Laravel 11 and 12." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://analytics.apogee.gr/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '11']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="nav-brand" href="index.html" aria-label="Apogee home">
+      <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
+    </a>
+    <nav class="nav-menu" aria-label="Main">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a>
+      <a class="nav-link is-active" href="website-404-redirects.html" aria-current="page">404 Redirects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker">// Open source package</p>
+        <h1 class="h-xl">
+          <span class="accent-bar" aria-hidden="true"></span>
+          <span class="title-text">Website 404 Redirects</span>
+        </h1>
+        <p class="repo-path package-intro">Apogee-Information-Systems / website-404-redirects</p>
+
+        <div class="package-layout">
+          <div class="content-panel">
+            <p class="body-copy">
+              Log public 404 paths and manage 301 redirects from a database table — for Laravel 11 and 12. Keep broken URLs visible, fix them without redeploying hard-coded maps, and optionally manage everything from a Filament admin panel.
+            </p>
+            <div class="page-actions">
+              <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="col-label">// Features</p>
+            <div class="content-panel">
+              <ul class="feature-list">
+                <li>Log unmatched public GET/HEAD URLs with hit counts and timestamps</li>
+                <li>Redirect paths via early middleware before routing runs</li>
+                <li>Optional Filament admin to review hits and set redirects</li>
+                <li>Configurable path exclusions, normalization, and caching</li>
+                <li>Auto-wired on install — no bootstrap changes required for most apps</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <p class="col-label">// Quick start</p>
+            <pre class="code-block"><code>composer require apogee/website-404-redirects
+
+php artisan vendor:publish --tag=website-404-redirects-config
+php artisan migrate</code></pre>
+          </div>
+
+          <div>
+            <p class="col-label">// Requirements</p>
+            <div class="content-panel">
+              <ul class="feature-list">
+                <li>PHP ^8.2</li>
+                <li>Laravel ^11.0 or ^12.0</li>
+                <li>Optional: Filament ^3.0 or ^4.0 for the admin UI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="site-foot">
+          APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
