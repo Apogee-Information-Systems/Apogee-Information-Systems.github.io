@@ -329,7 +329,6 @@ main { padding-top: var(--nav-h); }
 }
 
 .blog-feed-section {
-  margin-top: clamp(40px, 6vw, 64px);
   display: flex;
   flex-direction: column;
   gap: 16px;
