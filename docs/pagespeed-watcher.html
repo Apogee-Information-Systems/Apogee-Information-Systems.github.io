@@ -55,32 +55,33 @@
         </h1>
         <p class="repo-path package-intro">Apogee-Information-Systems / pagespeed-watcher</p>
 
-        <div class="package-layout">
-          <div class="content-panel">
-            <p class="body-copy">
-              Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages. Validate API connectivity, track daily usage, and schedule performance tests — all from Artisan commands and a ready-made database schema.
-            </p>
-            <div class="page-actions">
-              <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">View on GitHub</a>
-            </div>
-          </div>
-
-          <div>
-            <p class="col-label">// Features</p>
+        <div class="split package-split">
+          <div class="package-layout">
             <div class="content-panel">
-              <ul class="feature-list">
-                <li>CLI commands for API validation and page performance tests</li>
-                <li>Daily usage tracking with cost estimates beyond the free tier</li>
-                <li>Configurable rate limits, timeouts, and performance score thresholds</li>
-                <li>Database schema for pages, test results, settings, and API usage</li>
-                <li>Scheduled daily tests with URL discovery support</li>
-              </ul>
+              <p class="body-copy">
+                Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages. Validate API connectivity, track daily usage, and schedule performance tests — all from Artisan commands and a ready-made database schema.
+              </p>
+              <div class="page-actions">
+                <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <p class="col-label">// Quick start</p>
-            <pre class="code-block"><code>composer require apogee/laravel-pagespeed-watcher
+            <div>
+              <p class="col-label">// Features</p>
+              <div class="content-panel">
+                <ul class="feature-list">
+                  <li>CLI commands for API validation and page performance tests</li>
+                  <li>Daily usage tracking with cost estimates beyond the free tier</li>
+                  <li>Configurable rate limits, timeouts, and performance score thresholds</li>
+                  <li>Database schema for pages, test results, settings, and API usage</li>
+                  <li>Scheduled daily tests with URL discovery support</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <p class="col-label">// Quick start</p>
+              <pre class="code-block"><code>composer require apogee/laravel-pagespeed-watcher
 
 php artisan vendor:publish --tag=watcher-config
 php artisan vendor:publish --tag=watcher-migrations
@@ -88,17 +89,35 @@ php artisan migrate
 
 php artisan watcher:test-page
 php artisan watcher:usage</code></pre>
-          </div>
+            </div>
 
-          <div>
-            <p class="col-label">// Commands</p>
-            <div class="content-panel">
-              <h2 class="h-section">watcher:test-page</h2>
-              <p class="body-copy">Run a PageSpeed Insights test to validate API connectivity and analyze page performance. Supports <code>--strategy=mobile|desktop</code> and <code>--url=</code> options.</p>
-              <h2 class="h-section" style="margin-top: 20px;">watcher:usage</h2>
-              <p class="body-copy">Monitor your PageSpeed Insights API usage — today's totals and the last seven days with cost estimates.</p>
+            <div>
+              <p class="col-label">// Commands</p>
+              <div class="content-panel">
+                <h2 class="h-section">watcher:test-page</h2>
+                <p class="body-copy">Run a PageSpeed Insights test to validate API connectivity and analyze page performance. Supports <code>--strategy=mobile|desktop</code> and <code>--url=</code> options.</p>
+                <h2 class="h-section" style="margin-top: 20px;">watcher:usage</h2>
+                <p class="body-copy">Monitor your PageSpeed Insights API usage — today's totals and the last seven days with cost estimates.</p>
+              </div>
             </div>
           </div>
+
+          <aside class="col-stack package-sidebar">
+            <div class="announcements-section">
+              <p class="col-label">// Announcements</p>
+              <div class="announcements-panel">
+                <ul class="announcements-list">
+                  <li class="announcement-item">
+                    <p class="announcement-date">Aug 2026</p>
+                    <h3>
+                      <a class="announcement-title" href="blog-open-sourcing-pagespeed-watcher.html">Open-sourcing PageSpeed Watcher</a>
+                    </h3>
+                    <p class="announcement-excerpt">From internal Laravel monitoring to a public package: scheduled PSI checks, persisted history, and API usage tracking for teams that outgrow spreadsheets.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
         </div>
 
         <p class="site-foot">
@@ -108,5 +127,6 @@ php artisan watcher:usage</code></pre>
       </div>
     </section>
   </main>
+  <script src="copy-code.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open-sourcing PageSpeed Watcher — Apogee on GitHub</title>
+  <meta name="description" content="How a portfolio monitoring problem became a production Laravel package, and what we chose to publish on GitHub." />
+  <meta name="theme-color" content="#ff6633" />
+  <meta name="author" content="Apogee Information Systems" />
+  <link rel="canonical" href="https://apogee-information-systems.github.io/blog-open-sourcing-pagespeed-watcher.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://apogee-information-systems.github.io/blog-open-sourcing-pagespeed-watcher.html" />
+  <meta property="og:title" content="Open-sourcing PageSpeed Watcher — Apogee on GitHub" />
+  <meta property="og:description" content="How a portfolio monitoring problem became a production Laravel package, and what we chose to publish on GitHub." />
+  <meta property="og:site_name" content="Apogee Information Systems" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Open-sourcing PageSpeed Watcher — Apogee on GitHub" />
+  <meta name="twitter:description" content="How a portfolio monitoring problem became a production Laravel package, and what we chose to publish on GitHub." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://analytics.apogee.gr/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '11']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="nav-brand" href="index.html" aria-label="Apogee home">
+      <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
+    </a>
+    <nav class="nav-menu" aria-label="Main">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a>
+      <a class="nav-link" href="website-404-redirects.html">404 Redirects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker post-date">19 Aug 2026</p>
+        <h1 class="h-xl">
+          <span class="accent-bar" aria-hidden="true"></span>
+          <span class="title-text">Open-sourcing PageSpeed Watcher: from internal Laravel monitoring to a public package</span>
+        </h1>
+        <p class="post-subtitle">How a portfolio monitoring problem became a production package, and what we chose to publish on GitHub.</p>
+
+        <div class="split post-split">
+          <article class="post-article">
+          <p class="body-copy post-lede">
+            When you manage many client sites, manual PageSpeed Insights checks do not scale. You run PSI on one property, copy LCP and INP into a spreadsheet, open the next client, and repeat until the list resets before you finish. We built a Laravel package to run scheduled tests, persist results, and track API usage, then open-sourced it so other teams can use the same foundation without our SaaS layer.
+          </p>
+
+          <section class="post-section">
+            <p class="col-label">// Manual PSI checks at agency scale</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                Apogee Information Systems develops custom software, digital platforms, and open-source tools for organisations across Europe. Much of our work is long-term support: deployments, infrastructure, SEO, and performance, and for years monitoring followed the same manual loop.
+              </p>
+              <p class="body-copy">
+                The tools we tried each covered one part of the workflow. Per-site pricing became expensive at agency scale, and Lighthouse CI was capable but added its own maintenance: pipelines, secrets, alerting, and keeping tests meaningful across dozens of properties. Data lived in different places, so regressions were easy to miss, and the familiar failure mode still happened: a client's performance dropped after a deployment, we did not catch it in routine checks, they noticed first, and rankings had already moved. At that point we treated monitoring as infrastructure, not a weekly chore.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// What we built first in Laravel</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                Among many different open source solutions, as well as our own Apogee Essence framework, we build with Laravel. When we need something reliable and repeatable, we ship it as a package (config, migrations, Artisan commands, tests) and wire it into our applications.
+              </p>
+              <p class="body-copy">
+                PageSpeed Watcher started as internal tooling: scheduled Google PageSpeed Insights checks, results stored in our database, and visibility into API usage so quota and cost did not surprise us. Phase 1 was deliberately narrow:
+              </p>
+              <ul class="feature-list">
+                <li>PSI client with timeouts, retries, and rate limiting</li>
+                <li>Database tables for pages, test results, settings, and daily API usage</li>
+                <li><code>watcher:test-page</code> to run a full PSI test from the CLI (not a cheap "is my key valid?" check; Google's API has no separate validation endpoint, and every call consumes quota)</li>
+                <li><code>watcher:usage</code> for today's totals, the last seven days, and cost estimates beyond the free tier</li>
+                <li>Configuration for thresholds, discovery limits, and scheduled daily tests</li>
+              </ul>
+              <p class="body-copy">
+                The goal was straightforward production code: run quietly on a schedule while we focus on client work.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// From package engine to agency platform</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                The package handles running tests and storing data. It does not handle managing twenty client organisations, onboarding sites without hand-entering URLs, per-site performance budgets, or white-label PDF reports.
+              </p>
+              <p class="body-copy">
+                Apogee Watcher builds on the same foundation: Laravel, Filament, and PageSpeed Watcher at the core. The platform adds multi-tenancy, automated page discovery, performance budgets, alerts, and client-ready reporting. The package remains the engine; the platform is the agency workflow around it. If you have read our <a class="inline-link" href="https://apogeewatcher.com/blog/changelog-1-from-zero-to-one" target="_blank" rel="noopener">changelog</a> or <a class="inline-link" href="https://apogeewatcher.com/blog/introducing-watcher" target="_blank" rel="noopener">introductory posts</a>, the split is the same: we needed the package first, and the product followed when we saw other agencies facing the same operational gap.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Why we published it on GitHub</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                Laravel conventions, ecosystem packages, and patterns shape much of our work, and publishing PageSpeed Watcher is one way to give that back.
+              </p>
+              <ol class="post-list">
+                <li>The problem is not unique to us. Any Laravel team tracking Core Web Vitals eventually needs scheduled PSI checks, persisted history, and API usage visibility, without rebuilding the same integration each time.</li>
+                <li>The package stands on its own. Bolt it onto your application, fork the schema, or build your own dashboard; you should not need a hosted product to get the building blocks.</li>
+                <li>We run it in production. Like our <a class="inline-link" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">Website 404 Redirects</a> package, this is code we use ourselves, not a demo repository.</li>
+                <li>Transparency matters. Performance tooling touches client data and third-party APIs. Open source lets you inspect what runs, what is stored, and how quota is counted.</li>
+              </ol>
+              <p class="body-copy">
+                The MIT licence is deliberate: adopt it, extend it, embed it in client projects. If Apogee Watcher fits your agency workflow, use it. If you only need the Laravel layer, the package is there for that too. Layer, don't replace.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Install and what Phase 1 includes</p>
+            <pre class="code-block"><code>composer require apogee/laravel-pagespeed-watcher
+
+php artisan vendor:publish --tag=watcher-config
+php artisan vendor:publish --tag=watcher-migrations
+php artisan migrate
+
+php artisan watcher:test-page
+php artisan watcher:usage</code></pre>
+            <div class="post-columns">
+              <div class="content-panel">
+                <h2 class="h-section">Included</h2>
+                <ul class="feature-list">
+                  <li>Artisan commands for PSI tests and API usage tracking</li>
+                  <li>Migrations for pages, test results, settings, and API usage</li>
+                  <li>PSI integration designed for scheduled jobs, not one-off browser tests</li>
+                  <li>Configuration for thresholds, rate limits, and discovery limits</li>
+                </ul>
+              </div>
+              <div class="content-panel">
+                <h2 class="h-section">Not included</h2>
+                <ul class="feature-list">
+                  <li>Multi-tenant admin UI</li>
+                  <li>Automated page discovery interface</li>
+                  <li>Performance budgets and alert routing (Slack, webhooks)</li>
+                  <li>White-label PDF reports</li>
+                  <li>Hosted monitoring dashboard</li>
+                </ul>
+              </div>
+            </div>
+            <p class="body-copy">
+              Those capabilities live in <a class="inline-link" href="https://apogeewatcher.com/" target="_blank" rel="noopener">Apogee Watcher</a>. The package is the layer we were ready to share; the platform is where we invest in agency-specific product work.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// What we learned running it in production</p>
+            <div class="content-panel">
+              <p class="body-copy">Three things stood out while building and operating this across client environments:</p>
+              <ul class="feature-list">
+                <li>Command names should reflect cost. We originally shipped <code>watcher:test-api-key</code>, which implied a cheap validation call. PSI has no separate validation endpoint, and every test consumes quota. We renamed it to <code>watcher:test-page</code> so the cost is explicit before someone runs it in CI.</li>
+                <li>API usage is part of the feature. Portfolios scale test volume quickly, and tracking daily usage (plus estimated cost past the free tier) matters as much as the scores themselves.</li>
+                <li>Lab data is only half the story. PageSpeed Insights returns Lighthouse lab metrics and, when available, Chrome UX Report (CrUX) field data. The package runs PSI and persists results; interpreting lab versus field, and acting on both, is still operational work, which is why we write about it on the <a class="inline-link" href="https://apogeewatcher.com/blog" target="_blank" rel="noopener">Apogee Watcher blog</a>.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Links</p>
+            <div class="content-panel">
+              <ul class="feature-list">
+                <li><strong>Package:</strong> <a class="inline-link" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">Apogee-Information-Systems / pagespeed-watcher</a></li>
+                <li><strong>Overview:</strong> <a class="inline-link" href="pagespeed-watcher.html">Apogee on GitHub — PageSpeed Watcher</a></li>
+                <li><strong>Agency monitoring platform:</strong> <a class="inline-link" href="https://apogeewatcher.com/" target="_blank" rel="noopener">apogeewatcher.com</a></li>
+              </ul>
+              <p class="body-copy">
+                Issues and pull requests are welcome. We are especially interested in feedback from teams running this on schedules across multiple environments.
+              </p>
+            </div>
+          </section>
+          </article>
+
+          <aside class="col-stack post-sidebar">
+            <div class="sidebar-section">
+              <p class="col-label">// Open source package</p>
+              <article class="pt product sidebar-product">
+                <p class="pt-idx">01</p>
+                <h3>
+                  <a class="announcement-title" href="pagespeed-watcher.html">PageSpeed Watcher</a>
+                </h3>
+                <p class="repo-path">Apogee-Information-Systems / pagespeed-watcher</p>
+                <p>Open-source Laravel package for scheduled Google PageSpeed Insights checks, persisted results, and API usage tracking.</p>
+                <div class="btn-row">
+                  <a class="btn-secondary" href="pagespeed-watcher.html">Package overview</a>
+                  <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">View on GitHub</a>
+                </div>
+              </article>
+            </div>
+          </aside>
+        </div>
+
+        <p class="post-byline">
+          Apogee Information Systems · Thessaloniki · Luxembourg · Barcelona ·
+          <a class="inline-link" href="https://apogee.lu/" target="_blank" rel="noopener">apogee.lu</a> ·
+          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">apogee.gr</a>
+        </p>
+
+        <p class="site-foot">
+          APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="copy-code.js" defer></script>
+</body>
+</html>
