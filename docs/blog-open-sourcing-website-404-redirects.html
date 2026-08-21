@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open-sourcing Website 404 Redirects — Apogee on GitHub</title>
+  <meta name="description" content="How we stopped redeploying redirect maps and started logging broken URLs in production with a Laravel package." />
+  <meta name="theme-color" content="#ff6633" />
+  <meta name="author" content="Apogee Information Systems" />
+  <link rel="canonical" href="https://apogee-information-systems.github.io/blog-open-sourcing-website-404-redirects.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://apogee-information-systems.github.io/blog-open-sourcing-website-404-redirects.html" />
+  <meta property="og:title" content="Open-sourcing Website 404 Redirects — Apogee on GitHub" />
+  <meta property="og:description" content="How we stopped redeploying redirect maps and started logging broken URLs in production with a Laravel package." />
+  <meta property="og:site_name" content="Apogee Information Systems" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Open-sourcing Website 404 Redirects — Apogee on GitHub" />
+  <meta name="twitter:description" content="How we stopped redeploying redirect maps and started logging broken URLs in production with a Laravel package." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://analytics.apogee.gr/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '11']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="nav-brand" href="index.html" aria-label="Apogee home">
+      <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
+    </a>
+    <nav class="nav-menu" aria-label="Main">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a>
+      <a class="nav-link" href="website-404-redirects.html">404 Redirects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker post-date">10 Jun 2026</p>
+        <h1 class="h-xl">
+          <span class="accent-bar" aria-hidden="true"></span>
+          <span class="title-text">Open-sourcing Website 404 Redirects: database-driven 301s for Laravel</span>
+        </h1>
+        <p class="post-subtitle">How we stopped redeploying redirect maps and started logging broken URLs in production.</p>
+
+        <div class="split post-split">
+          <article class="post-article">
+          <p class="body-copy post-lede">
+            When a client site gets restructured, old URLs do not disappear politely. A page moves, a slug changes, a section is retired, and within days <code>/old-section/article-name</code> is returning 404. You add a redirect — in <code>.htaccess</code>, in nginx, in a route file — deploy, and move on. Six months later, after another migration, the map is out of date again and Search Console is full of crawl errors nobody noticed in time. We built a Laravel package to log public 404 paths, serve 301 redirects from the database, and fix broken URLs without redeploying hard-coded maps, then open-sourced it so other teams can use the same approach.
+          </p>
+
+          <section class="post-section">
+            <p class="col-label">// Broken URLs at agency scale</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                Apogee Information Systems develops custom software, digital platforms, and open-source tools for organisations across Europe. Much of our work is long-term support: deployments, infrastructure, SEO, and content migrations across dozens of properties.
+              </p>
+              <p class="body-copy">
+                The failure mode is familiar. A client restructures their site — new CMS, new URL scheme, retired sections — and old paths start returning 404. Redirects end up scattered across server config, route files, and one-off <code>.htaccess</code> rules. Every fix requires a deploy. Meanwhile, nobody has a clear picture of which paths are actually breaking: log files are noisy, analytics undercount, and Search Console lags by days or weeks. By the time someone notices, rankings have already moved and the redirect map is a patchwork of fixes from three different people.
+              </p>
+              <p class="body-copy">
+                At that point we treated 404 management as infrastructure, not a post-migration cleanup task.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// What we built first in Laravel</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                Among many different open source solutions, as well as our own Apogee Essence framework, we build with Laravel. When we need something reliable and repeatable, we ship it as a package (config, migrations, middleware, tests) and wire it into our applications.
+              </p>
+              <p class="body-copy">
+                Website 404 Redirects started as an in-app module on client projects. The requirements were straightforward:
+              </p>
+              <ul class="feature-list">
+                <li>Log unmatched public <code>GET</code> and <code>HEAD</code> requests with hit counts and first/last seen timestamps</li>
+                <li>Serve 301 redirects from a database table, evaluated early — before routing and controllers run</li>
+                <li>Exclude noise paths (admin, API, static assets, Livewire) via configurable patterns</li>
+                <li>Optionally manage everything from a Filament admin panel</li>
+                <li>Auto-wire on install so most applications need no <code>bootstrap/app.php</code> changes</li>
+              </ul>
+              <p class="body-copy">
+                The package registers <code>RedirectWebsite404s</code> middleware globally (prepended so redirects apply before routing), hooks into <code>NotFoundHttpException</code> to log hits, and invalidates a cached redirect map when rows change. Path normalization (lowercase segments, trailing slash handling) keeps <code>/Foo</code> and <code>/foo</code> on one row. The scope was deliberately narrow: log, redirect, configure — not a full SEO audit tool or sitemap manager.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// From in-app module to public package</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                The module ran on multiple client sites before we extracted it. The pattern was the same each time: install, migrate, let 404s accumulate for a week, review the hit table, set redirects for the paths that mattered. Content editors could fix broken links through Filament without asking for a deploy.
+              </p>
+              <p class="body-copy">
+                Version 1.0.0 (June 2026) packaged the core model, migration, services, middleware, 404 logging listener, config, cache observer, and Orchestra Testbench tests. The optional Filament plugin (<code>Website404RedirectsFilamentPlugin</code>) followed as a separate concern, with a <code>RedirectAdminAuthorizer</code> contract so each host application defines its own access control.
+              </p>
+              <p class="body-copy">
+                There is no commercial platform layer on top of this one. Website 404 Redirects is the whole product: a focused package for a specific operational problem. It sits in our open-source portfolio alongside <a class="inline-link" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">PageSpeed Watcher</a> — different problem, same principle: code we run in production, published when it is stable enough to share.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Why we published it on GitHub</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                Laravel conventions, ecosystem packages, and patterns shape much of our work, and publishing Website 404 Redirects is one way to give that back.
+              </p>
+              <ol class="post-list">
+                <li>The problem is not unique to us. Any Laravel team maintaining content-heavy sites eventually needs visibility into broken URLs and a way to fix redirects without redeploying config files.</li>
+                <li>The package stands on its own. Bolt it onto your application, use the Filament admin or build your own UI against the same table — you should not need a hosted product to log 404s and serve database redirects.</li>
+                <li>We run it in production. Like our <a class="inline-link" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">PageSpeed Watcher</a> package, this is code extracted from live client projects, not a demo repository.</li>
+                <li>Transparency matters. Redirect tooling touches public URLs and SEO. Open source lets you inspect what is logged, what is excluded, and how paths are normalized before they hit the database.</li>
+              </ol>
+              <p class="body-copy">
+                The MIT licence is deliberate: adopt it, extend it, embed it in client projects. Layer, don't replace.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Install and what the package includes</p>
+            <pre class="code-block"><code>composer require apogee/website-404-redirects
+
+php artisan vendor:publish --tag=website-404-redirects-config
+php artisan migrate</code></pre>
+            <p class="body-copy">
+              Most apps need nothing else — middleware and 404 logging are auto-wired on install.
+            </p>
+            <div class="post-columns">
+              <div class="content-panel">
+                <h2 class="h-section">Included</h2>
+                <ul class="feature-list">
+                  <li>404 hit logging for public <code>GET</code>/<code>HEAD</code> requests with hit counts and timestamps</li>
+                  <li>Database-driven 301 redirects via early middleware (before routing runs)</li>
+                  <li>Configurable path exclusions, normalization, and redirect caching</li>
+                  <li>Optional Filament admin plugin to review hits and set redirects</li>
+                  <li><code>RedirectAdminAuthorizer</code> contract for host-defined access control</li>
+                  <li>Auto-registration — no <code>bootstrap/app.php</code> changes required for most apps</li>
+                </ul>
+              </div>
+              <div class="content-panel">
+                <h2 class="h-section">Not included</h2>
+                <ul class="feature-list">
+                  <li>SEO audit or broken-link crawling</li>
+                  <li>Sitemap generation or management</li>
+                  <li>Analytics integration (Google Search Console, Matomo, etc.)</li>
+                  <li>Multi-site or multi-tenant dashboard</li>
+                  <li>Automatic redirect suggestions based on content similarity</li>
+                </ul>
+              </div>
+            </div>
+            <p class="body-copy">
+              Those are separate concerns. The package handles the operational loop: see what is breaking, fix it in the database, serve the redirect on the next request.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Optional Filament admin</p>
+            <div class="content-panel">
+              <p class="body-copy">
+                If your application already runs Filament, register the plugin on your panel:
+              </p>
+              <pre class="code-block"><code>use Apogee\Website404Redirects\Filament\Website404RedirectsFilamentPlugin;
+
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        // ...
+        ->plugin(Website404RedirectsFilamentPlugin::make());
+}</code></pre>
+              <p class="body-copy">
+                Override <code>RedirectAdminAuthorizer</code> in your <code>AppServiceProvider</code> to control who can manage redirects — the package ships a no-op implementation that denies everyone until you define your own policy.
+              </p>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// What we learned running it in production</p>
+            <div class="content-panel">
+              <p class="body-copy">Three things stood out while building and operating this across client environments:</p>
+              <ul class="feature-list">
+                <li>Redirects must run before routing. If middleware runs after the router, matched routes and controller <code>abort(404)</code> paths behave differently from unmatched URLs. Prepending <code>RedirectWebsite404s</code> globally ensures database redirects apply consistently, whether the path was never defined or was explicitly aborted.</li>
+                <li>Exclusions are as important as inclusions. Without sensible defaults for admin, API, health checks, and static assets, the hit table fills with noise. The <code>exclude_patterns</code> config uses <code>Str::is</code> patterns — customise after publishing.</li>
+                <li>Path normalization is a semver contract. Lowercasing segments, stripping trailing slashes, and enforcing max path length affect how rows are deduplicated and matched. Changing those rules is a breaking change and must ship as a major version. Document it clearly; your existing redirect rows depend on it.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="post-section">
+            <p class="col-label">// Links</p>
+            <div class="content-panel">
+              <ul class="feature-list">
+                <li><strong>Package:</strong> <a class="inline-link" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">Apogee-Information-Systems / website-404-redirects</a></li>
+                <li><strong>Overview:</strong> <a class="inline-link" href="website-404-redirects.html">Apogee on GitHub — Website 404 Redirects</a></li>
+                <li><strong>Sister package:</strong> <a class="inline-link" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">Apogee-Information-Systems / pagespeed-watcher</a></li>
+              </ul>
+              <p class="body-copy">
+                Issues and pull requests are welcome. We are especially interested in feedback from teams running this across content migrations and long-lived client sites.
+              </p>
+            </div>
+          </section>
+          </article>
+
+          <aside class="col-stack post-sidebar">
+            <div class="sidebar-section">
+              <p class="col-label">// Open source package</p>
+              <article class="pt product sidebar-product">
+                <p class="pt-idx">02</p>
+                <h3>
+                  <a class="announcement-title" href="website-404-redirects.html">Website 404 Redirects</a>
+                </h3>
+                <p class="repo-path">Apogee-Information-Systems / website-404-redirects</p>
+                <p>Log public 404 paths and manage 301 redirects from a database table — without redeploying hard-coded maps.</p>
+                <div class="btn-row">
+                  <a class="btn-secondary" href="website-404-redirects.html">Package overview</a>
+                  <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">View on GitHub</a>
+                </div>
+              </article>
+            </div>
+          </aside>
+        </div>
+
+        <p class="post-byline">
+          Apogee Information Systems · Thessaloniki · Luxembourg · Barcelona ·
+          <a class="inline-link" href="https://apogee.lu/" target="_blank" rel="noopener">apogee.lu</a> ·
+          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">apogee.gr</a>
+        </p>
+
+        <p class="site-foot">
+          APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="copy-code.js" defer></script>
+</body>
+</html>

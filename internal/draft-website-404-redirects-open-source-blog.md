@@ -1,4 +1,4 @@
-# Draft: Why we open-sourced Website 404 Redirects
+# Draft: Website 404 Redirects
 
 Status: **Draft — not for publication**
 

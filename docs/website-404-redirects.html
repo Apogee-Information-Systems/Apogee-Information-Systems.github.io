@@ -55,47 +55,66 @@
         </h1>
         <p class="repo-path package-intro">Apogee-Information-Systems / website-404-redirects</p>
 
-        <div class="package-layout">
-          <div class="content-panel">
-            <p class="body-copy">
-              Log public 404 paths and manage 301 redirects from a database table — for Laravel 11 and 12. Keep broken URLs visible, fix them without redeploying hard-coded maps, and optionally manage everything from a Filament admin panel.
-            </p>
-            <div class="page-actions">
-              <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">View on GitHub</a>
-            </div>
-          </div>
-
-          <div>
-            <p class="col-label">// Features</p>
+        <div class="split package-split">
+          <div class="package-layout">
             <div class="content-panel">
-              <ul class="feature-list">
-                <li>Log unmatched public GET/HEAD URLs with hit counts and timestamps</li>
-                <li>Redirect paths via early middleware before routing runs</li>
-                <li>Optional Filament admin to review hits and set redirects</li>
-                <li>Configurable path exclusions, normalization, and caching</li>
-                <li>Auto-wired on install — no bootstrap changes required for most apps</li>
-              </ul>
+              <p class="body-copy">
+                Log public 404 paths and manage 301 redirects from a database table — for Laravel 11 and 12. Keep broken URLs visible, fix them without redeploying hard-coded maps, and optionally manage everything from a Filament admin panel.
+              </p>
+              <div class="page-actions">
+                <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <p class="col-label">// Quick start</p>
-            <pre class="code-block"><code>composer require apogee/website-404-redirects
+            <div>
+              <p class="col-label">// Features</p>
+              <div class="content-panel">
+                <ul class="feature-list">
+                  <li>Log unmatched public GET/HEAD URLs with hit counts and timestamps</li>
+                  <li>Redirect paths via early middleware before routing runs</li>
+                  <li>Optional Filament admin to review hits and set redirects</li>
+                  <li>Configurable path exclusions, normalization, and caching</li>
+                  <li>Auto-wired on install — no bootstrap changes required for most apps</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <p class="col-label">// Quick start</p>
+              <pre class="code-block"><code>composer require apogee/website-404-redirects
 
 php artisan vendor:publish --tag=website-404-redirects-config
 php artisan migrate</code></pre>
-          </div>
+            </div>
 
-          <div>
-            <p class="col-label">// Requirements</p>
-            <div class="content-panel">
-              <ul class="feature-list">
-                <li>PHP ^8.2</li>
-                <li>Laravel ^11.0 or ^12.0</li>
-                <li>Optional: Filament ^3.0 or ^4.0 for the admin UI</li>
-              </ul>
+            <div>
+              <p class="col-label">// Requirements</p>
+              <div class="content-panel">
+                <ul class="feature-list">
+                  <li>PHP ^8.2</li>
+                  <li>Laravel ^11.0 or ^12.0</li>
+                  <li>Optional: Filament ^3.0 or ^4.0 for the admin UI</li>
+                </ul>
+              </div>
             </div>
           </div>
+
+          <aside class="col-stack package-sidebar">
+            <div class="announcements-section">
+              <p class="col-label">// Announcements</p>
+              <div class="announcements-panel">
+                <ul class="announcements-list">
+                  <li class="announcement-item">
+                    <p class="announcement-date">10 Jun 2026</p>
+                    <h3>
+                      <a class="announcement-title" href="blog-open-sourcing-website-404-redirects.html">Open-sourcing Website 404 Redirects</a>
+                    </h3>
+                    <p class="announcement-excerpt">Database-driven 301s for Laravel: log broken URLs in production and fix redirects without redeploying hard-coded maps.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
         </div>
 
         <p class="site-foot">
