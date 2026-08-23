@@ -43,12 +43,13 @@
     <a class="nav-brand" href="index.html" data-od-id="nav-logo" aria-label="Apogee home">
       <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
     </a>
-    <nav class="nav-menu" aria-label="Main">
-      <a class="nav-link is-active" href="index.html" data-od-id="nav-home" aria-current="page">Home</a>
-      <a class="nav-link" href="pagespeed-watcher.html" data-od-id="nav-pagespeed">PageSpeed Watcher</a>
-      <a class="nav-link" href="website-404-redirects.html" data-od-id="nav-404">404 Redirects</a>
-      <a class="nav-link" href="blog.html" data-od-id="nav-blog">Blog</a>
-    </nav>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main">
+      <li><a class="nav-link is-active" href="index.html" data-od-id="nav-home" aria-current="page">Home</a></li>
+      <li><a class="nav-link" href="pagespeed-watcher.html" data-od-id="nav-pagespeed">PageSpeed Watcher</a></li>
+      <li><a class="nav-link" href="website-404-redirects.html" data-od-id="nav-404">404 Redirects</a></li>
+      <li><a class="nav-link" href="blog.html" data-od-id="nav-blog">Blog</a></li>
+    </ul>
   </header>
 
   <main>
@@ -165,6 +166,7 @@
       </div>
     </section>
   </main>
+  <script src="nav.js" defer></script>
   <script src="blog-feed.js" defer></script>
 </body>
 </html>
