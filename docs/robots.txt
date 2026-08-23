@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apogee-information-systems.github.io/sitemap.xml
