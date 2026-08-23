@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,11 +43,13 @@
     <a class="nav-brand" href="index.html" data-od-id="nav-logo" aria-label="Apogee home">
       <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
     </a>
-    <nav class="nav-menu" aria-label="Main">
-      <a class="nav-link is-active" href="index.html" data-od-id="nav-home" aria-current="page">Home</a>
-      <a class="nav-link" href="pagespeed-watcher.html" data-od-id="nav-pagespeed">PageSpeed Watcher</a>
-      <a class="nav-link" href="website-404-redirects.html" data-od-id="nav-404">404 Redirects</a>
-    </nav>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main">
+      <li><a class="nav-link is-active" href="index.html" data-od-id="nav-home" aria-current="page">Home</a></li>
+      <li><a class="nav-link" href="pagespeed-watcher.html" data-od-id="nav-pagespeed">PageSpeed Watcher</a></li>
+      <li><a class="nav-link" href="website-404-redirects.html" data-od-id="nav-404">404 Redirects</a></li>
+      <li><a class="nav-link" href="blog.html" data-od-id="nav-blog">Blog</a></li>
+    </ul>
   </header>
 
   <main>
@@ -77,7 +79,7 @@
             </div>
 
             <div class="announcements-section" data-od-id="section-announcements">
-              <p class="col-label">// Announcements</p>
+              <p class="col-label">// Blog</p>
               <div class="announcements-panel" data-od-id="announcements-panel">
                 <ul class="announcements-list">
                   <li class="announcement-item">
@@ -118,7 +120,7 @@
               <p class="pt-idx">01</p>
               <h3>PageSpeed Watcher</h3>
               <p class="repo-path">Apogee-Information-Systems / pagespeed-watcher</p>
-              <p>Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages — CLI commands for API validation, usage tracking, and scheduled performance tests.</p>
+              <p>Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages — scheduled page performance tests, usage tracking, and Artisan commands to run PSI from the CLI.</p>
               <div class="btn-row">
                 <a class="btn-secondary" href="pagespeed-watcher.html" data-od-id="repo-pagespeed-page">Learn more</a>
                 <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener" data-od-id="repo-pagespeed-link">View on GitHub</a>
@@ -133,6 +135,7 @@
               <div class="btn-row">
                 <a class="btn-secondary" href="website-404-redirects.html" data-od-id="repo-404-page">Learn more</a>
                 <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener" data-od-id="repo-404-link">View on GitHub</a>
+                <a class="btn-secondary" href="https://packagist.org/packages/apogee/website-404-redirects" target="_blank" rel="noopener" data-od-id="repo-404-packagist">View on Packagist</a>
               </div>
             </article>
 
@@ -158,11 +161,14 @@
 
         <p class="site-foot" data-od-id="site-foot">
           APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">Greece</a> ·
+          <a class="inline-link" href="https://apogee.lu/">Luxembourg</a> ·
           <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
         </p>
       </div>
     </section>
   </main>
+  <script src="nav.js" defer></script>
   <script src="blog-feed.js" defer></script>
 </body>
 </html>

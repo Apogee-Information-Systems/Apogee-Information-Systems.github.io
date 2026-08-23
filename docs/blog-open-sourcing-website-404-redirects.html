@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,11 +38,13 @@
     <a class="nav-brand" href="index.html" aria-label="Apogee home">
       <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
     </a>
-    <nav class="nav-menu" aria-label="Main">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a>
-      <a class="nav-link" href="website-404-redirects.html">404 Redirects</a>
-    </nav>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a></li>
+      <li><a class="nav-link" href="website-404-redirects.html">404 Redirects</a></li>
+      <li><a class="nav-link is-active" href="blog.html" aria-current="page">Blog</a></li>
+    </ul>
   </header>
 
   <main>
@@ -93,7 +95,7 @@
                 <li>Auto-wire on install so most applications need no <code>bootstrap/app.php</code> changes</li>
               </ul>
               <p class="body-copy">
-                The package registers <code>RedirectWebsite404s</code> middleware globally (prepended so redirects apply before routing), hooks into <code>NotFoundHttpException</code> to log hits, and invalidates a cached redirect map when rows change. Path normalization (lowercase segments, trailing slash handling) keeps <code>/Foo</code> and <code>/foo</code> on one row. The scope was deliberately narrow: log, redirect, configure — not a full SEO audit tool or sitemap manager.
+                The package registers <code>RedirectWebsite404s</code> middleware globally (prepended so redirects apply before routing), hooks into <code>NotFoundHttpException</code> to log hits, and invalidates a cached redirect map when rows change. Path normalisation (lowercase segments, trailing slash handling) keeps <code>/Foo</code> and <code>/foo</code> on one row. The scope was deliberately narrow: log, redirect, configure — not a full SEO audit tool or sitemap manager.
               </p>
             </div>
           </section>
@@ -123,7 +125,7 @@
                 <li>The problem is not unique to us. Any Laravel team maintaining content-heavy sites eventually needs visibility into broken URLs and a way to fix redirects without redeploying config files.</li>
                 <li>The package stands on its own. Bolt it onto your application, use the Filament admin or build your own UI against the same table — you should not need a hosted product to log 404s and serve database redirects.</li>
                 <li>We run it in production. Like our <a class="inline-link" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">PageSpeed Watcher</a> package, this is code extracted from live client projects, not a demo repository.</li>
-                <li>Transparency matters. Redirect tooling touches public URLs and SEO. Open source lets you inspect what is logged, what is excluded, and how paths are normalized before they hit the database.</li>
+                <li>Transparency matters. Redirect tooling touches public URLs and SEO. Open source lets you inspect what is logged, what is excluded, and how paths are normalised before they hit the database.</li>
               </ol>
               <p class="body-copy">
                 The MIT licence is deliberate: adopt it, extend it, embed it in client projects. Layer, don't replace.
@@ -146,7 +148,7 @@ php artisan migrate</code></pre>
                 <ul class="feature-list">
                   <li>404 hit logging for public <code>GET</code>/<code>HEAD</code> requests with hit counts and timestamps</li>
                   <li>Database-driven 301 redirects via early middleware (before routing runs)</li>
-                  <li>Configurable path exclusions, normalization, and redirect caching</li>
+                  <li>Configurable path exclusions, normalisation, and redirect caching</li>
                   <li>Optional Filament admin plugin to review hits and set redirects</li>
                   <li><code>RedirectAdminAuthorizer</code> contract for host-defined access control</li>
                   <li>Auto-registration — no <code>bootstrap/app.php</code> changes required for most apps</li>
@@ -195,7 +197,7 @@ public function panel(Panel $panel): Panel
               <ul class="feature-list">
                 <li>Redirects must run before routing. If middleware runs after the router, matched routes and controller <code>abort(404)</code> paths behave differently from unmatched URLs. Prepending <code>RedirectWebsite404s</code> globally ensures database redirects apply consistently, whether the path was never defined or was explicitly aborted.</li>
                 <li>Exclusions are as important as inclusions. Without sensible defaults for admin, API, health checks, and static assets, the hit table fills with noise. The <code>exclude_patterns</code> config uses <code>Str::is</code> patterns — customise after publishing.</li>
-                <li>Path normalization is a semver contract. Lowercasing segments, stripping trailing slashes, and enforcing max path length affect how rows are deduplicated and matched. Changing those rules is a breaking change and must ship as a major version. Document it clearly; your existing redirect rows depend on it.</li>
+                <li>Path normalisation is a semver contract. Lowercasing segments, stripping trailing slashes, and enforcing max path length affect how rows are deduplicated and matched. Changing those rules is a breaking change and must ship as a major version. Document it clearly; your existing redirect rows depend on it.</li>
               </ul>
             </div>
           </section>
@@ -204,7 +206,7 @@ public function panel(Panel $panel): Panel
             <p class="col-label">// Links</p>
             <div class="content-panel">
               <ul class="feature-list">
-                <li><strong>Package:</strong> <a class="inline-link" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">Apogee-Information-Systems / website-404-redirects</a></li>
+                <li><strong>Package:</strong> <a class="inline-link" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">Apogee-Information-Systems / website-404-redirects</a> · <a class="inline-link" href="https://packagist.org/packages/apogee/website-404-redirects" target="_blank" rel="noopener">Packagist</a></li>
                 <li><strong>Overview:</strong> <a class="inline-link" href="website-404-redirects.html">Apogee on GitHub — Website 404 Redirects</a></li>
                 <li><strong>Sister package:</strong> <a class="inline-link" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">Apogee-Information-Systems / pagespeed-watcher</a></li>
               </ul>
@@ -228,25 +230,24 @@ public function panel(Panel $panel): Panel
                 <div class="btn-row">
                   <a class="btn-secondary" href="website-404-redirects.html">Package overview</a>
                   <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/website-404-redirects" target="_blank" rel="noopener">View on GitHub</a>
+                  <a class="btn-secondary" href="https://packagist.org/packages/apogee/website-404-redirects" target="_blank" rel="noopener">View on Packagist</a>
                 </div>
               </article>
             </div>
           </aside>
         </div>
 
-        <p class="post-byline">
-          Apogee Information Systems · Thessaloniki · Luxembourg · Barcelona ·
-          <a class="inline-link" href="https://apogee.lu/" target="_blank" rel="noopener">apogee.lu</a> ·
-          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">apogee.gr</a>
-        </p>
 
         <p class="site-foot">
           APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">Greece</a> ·
+          <a class="inline-link" href="https://apogee.lu/">Luxembourg</a> ·
           <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
         </p>
       </div>
     </section>
   </main>
+  <script src="nav.js" defer></script>
   <script src="copy-code.js" defer></script>
 </body>
 </html>

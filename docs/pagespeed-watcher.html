@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PageSpeed Watcher — Apogee on GitHub</title>
-  <meta name="description" content="Laravel package for Google PageSpeed Insights checks — CLI validation, usage tracking, and scheduled performance tests." />
+  <meta name="description" content="Laravel package for Google PageSpeed Insights checks — scheduled page performance tests, usage tracking, and Artisan commands." />
   <meta name="theme-color" content="#ff6633" />
   <meta name="author" content="Apogee Information Systems" />
   <link rel="canonical" href="https://apogee-information-systems.github.io/pagespeed-watcher.html" />
@@ -38,11 +38,13 @@
     <a class="nav-brand" href="index.html" aria-label="Apogee home">
       <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
     </a>
-    <nav class="nav-menu" aria-label="Main">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link is-active" href="pagespeed-watcher.html" aria-current="page">PageSpeed Watcher</a>
-      <a class="nav-link" href="website-404-redirects.html">404 Redirects</a>
-    </nav>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link is-active" href="pagespeed-watcher.html" aria-current="page">PageSpeed Watcher</a></li>
+      <li><a class="nav-link" href="website-404-redirects.html">404 Redirects</a></li>
+      <li><a class="nav-link" href="blog.html">Blog</a></li>
+    </ul>
   </header>
 
   <main>
@@ -59,7 +61,7 @@
           <div class="package-layout">
             <div class="content-panel">
               <p class="body-copy">
-                Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages. Validate API connectivity, track daily usage, and schedule performance tests — all from Artisan commands and a ready-made database schema.
+                Open-source Laravel package to run Google PageSpeed Insights (PSI) checks for your app pages. Schedule performance tests, track daily API usage, and run PSI from Artisan commands — all backed by a ready-made database schema.
               </p>
               <div class="page-actions">
                 <a class="btn-secondary" href="https://github.com/Apogee-Information-Systems/pagespeed-watcher" target="_blank" rel="noopener">View on GitHub</a>
@@ -70,7 +72,7 @@
               <p class="col-label">// Features</p>
               <div class="content-panel">
                 <ul class="feature-list">
-                  <li>CLI commands for API validation and page performance tests</li>
+                  <li>CLI commands for page performance tests and API usage tracking</li>
                   <li>Daily usage tracking with cost estimates beyond the free tier</li>
                   <li>Configurable rate limits, timeouts, and performance score thresholds</li>
                   <li>Database schema for pages, test results, settings, and API usage</li>
@@ -95,7 +97,7 @@ php artisan watcher:usage</code></pre>
               <p class="col-label">// Commands</p>
               <div class="content-panel">
                 <h2 class="h-section">watcher:test-page</h2>
-                <p class="body-copy">Run a PageSpeed Insights test to validate API connectivity and analyze page performance. Supports <code>--strategy=mobile|desktop</code> and <code>--url=</code> options.</p>
+                <p class="body-copy">Run a full PageSpeed Insights test and analyse page performance. Every call consumes API quota — PSI has no separate validation endpoint. Supports <code>--strategy=mobile|desktop</code> and <code>--url=</code> options.</p>
                 <h2 class="h-section" style="margin-top: 20px;">watcher:usage</h2>
                 <p class="body-copy">Monitor your PageSpeed Insights API usage — today's totals and the last seven days with cost estimates.</p>
               </div>
@@ -104,7 +106,7 @@ php artisan watcher:usage</code></pre>
 
           <aside class="col-stack package-sidebar">
             <div class="announcements-section">
-              <p class="col-label">// Announcements</p>
+              <p class="col-label">// Blog</p>
               <div class="announcements-panel">
                 <ul class="announcements-list">
                   <li class="announcement-item">
@@ -122,11 +124,14 @@ php artisan watcher:usage</code></pre>
 
         <p class="site-foot">
           APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">Greece</a> ·
+          <a class="inline-link" href="https://apogee.lu/">Luxembourg</a> ·
           <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
         </p>
       </div>
     </section>
   </main>
+  <script src="nav.js" defer></script>
   <script src="copy-code.js" defer></script>
 </body>
 </html>

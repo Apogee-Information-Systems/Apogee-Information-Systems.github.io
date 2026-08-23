@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,11 +38,13 @@
     <a class="nav-brand" href="index.html" aria-label="Apogee home">
       <img src="Apogee_logo_2025_gr_2x1.png" alt="Apogee" width="280" height="140" />
     </a>
-    <nav class="nav-menu" aria-label="Main">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a>
-      <a class="nav-link" href="website-404-redirects.html">404 Redirects</a>
-    </nav>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="pagespeed-watcher.html">PageSpeed Watcher</a></li>
+      <li><a class="nav-link" href="website-404-redirects.html">404 Redirects</a></li>
+      <li><a class="nav-link is-active" href="blog.html" aria-current="page">Blog</a></li>
+    </ul>
   </header>
 
   <main>
@@ -207,19 +209,17 @@ php artisan watcher:usage</code></pre>
           </aside>
         </div>
 
-        <p class="post-byline">
-          Apogee Information Systems · Thessaloniki · Luxembourg · Barcelona ·
-          <a class="inline-link" href="https://apogee.lu/" target="_blank" rel="noopener">apogee.lu</a> ·
-          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">apogee.gr</a>
-        </p>
 
         <p class="site-foot">
           APOGEE INFORMATION SYSTEMS ·
+          <a class="inline-link" href="https://apogee.gr/" target="_blank" rel="noopener">Greece</a> ·
+          <a class="inline-link" href="https://apogee.lu/">Luxembourg</a> ·
           <a class="inline-link" href="https://github.com/Apogee-Information-Systems" target="_blank" rel="noopener">GitHub</a>
         </p>
       </div>
     </section>
   </main>
+  <script src="nav.js" defer></script>
   <script src="copy-code.js" defer></script>
 </body>
 </html>
