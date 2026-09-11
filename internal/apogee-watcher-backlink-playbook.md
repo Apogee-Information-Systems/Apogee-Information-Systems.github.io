@@ -150,7 +150,7 @@ Copy this block into pitches and adapt the lead sentence to the host site's audi
 | Gaps | Continuous monitoring lists only DebugBear / SpeedCurve / Calibre; **#12 CrUX Looker Dashboard retired** → point to CrUX Vis; Unlighthouse described as ongoing monitoring (it is one-off / CLI-oriented) |
 | Contact | Form at `/contact/` (captcha) — **do not** use old `bizdev@alphonsolabs.com` from Pulse / LinkedIn-era records |
 | Cite | [CrUX Dashboard retired: where to get TTFB, INP, and field history](https://apogeewatcher.com/blog/crux-dashboard-retired-where-to-get-ttfb-inp-field-history) |
-| Status | Form pitch ready |
+| Status | Submitted 2026-09-11 via `/contact/` (confirmation: Your message was sent successfully. Thanks.) |
 
 #### DR snapshot (2026-09-11, Ahrefs free checker)
 
@@ -256,13 +256,13 @@ Group by outreach angle. All URLs verified against the live sitemap as of Septem
 
 ---
 
-## Status log (as of 2026-09-11)
+## Status log (as of 2026-09-11; updated evening of 2026-09-11)
 
 | Target | Tactic | Status | Next step |
 | --- | --- | --- | --- |
 | AppSignal | A — guest post | Gmail draft ready | Markos review → send to `editorial@appsignal.com` |
 | PageSpeed Matters (Matt Suffoletto) | B — article update | Gmail draft ready | Markos review → send to `ms@pagespeedmatters.com` |
-| Alphonso Labs | B — article update | Form pitch ready | Submit via `/contact/` after review |
+| Alphonso Labs | B — article update | Submitted 2026-09-11 via `/contact/` (confirmation: Your message was sent successfully. Thanks.) | Await reply / watch for article update |
 | DEVOPSdigest | A — vendor forum | Not started | Draft vendor-forum post; homepage link only |
 | RabbitLoader | A — guest post | On hold | Re-check guest pipeline activity before pitch |
 | SigNoz | A — guest post | Research | Vet WFU + backlink placement |
