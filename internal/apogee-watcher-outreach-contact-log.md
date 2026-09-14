@@ -19,7 +19,9 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 
 | Date | Domain | Article / target | Channel | Contact | Type | Notes |
 |------|--------|------------------|---------|---------|------|-------|
+| 2026-09-07 | appsignal.com | Writer application: CWV field data alongside app monitoring | Email | editorial@appsignal.com | guest-post | Sent 2026-09-07T17:00:48Z |
 | 2026-09-11 | alphonsolabs.com | Best Website Speed Test Tools & Core Web Vitals 2026 — https://www.alphonsolabs.com/best-website-speed-test-tools-core-web-vitals-2026/ | Contact form | https://www.alphonsolabs.com/contact/ | article-update | Form confirmation: message sent successfully |
+| 2026-09-11 | pagespeedmatters.com | Best speed testing tools, bulk RUM & monitoring (2026) — https://www.pagespeedmatters.com/resources/blog/best-speed-testing-tools-bulk-rum-monitoring-2026 | Email | ms@pagespeedmatters.com | article-update | Subject: Complementary take on your 2026 agency monitoring stack guide; Sent 2026-09-11T17:01:52Z |
 | 2026-09-11 | kinsta.com | How to Properly Run a Website Speed Test — https://kinsta.com/blog/website-speed-test/ | Email | contact@kinsta.com | article-update | Retire outdated tools + scheduled PSI+CrUX; Sent 2026-09-11T18:25:18Z |
 | 2026-09-12 | elementor.com | How to Test Website Speed in 2026 — https://elementor.com/blog/how-to-test-website-speed-guide/ | Email | media@elementor.com | article-update | Managed PSI+CrUX after one-off tools; Sent 2026-09-12T08:34:57Z |
 | 2026-09-12 | cloudways.com | How to Improve Core Web Vitals — https://www.cloudways.com/blog/core-web-vitals/ | Email | pr@cloudways.com | article-update | FID→INP + agency monitoring; Sent 2026-09-12T08:37:31Z |
@@ -46,14 +48,13 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 
 | Date noted | Domain | Status | Notes |
 |------------|--------|--------|-------|
-| 2026-09-11 | pagespeedmatters.com | draft only | Gmail draft to ms@pagespeedmatters.com — not confirmed sent |
 | 2026-09-11 | nitropack.io | skipped / draft only | DR76+ partner form skipped; clarifying email stayed draft |
 | 2026-09-12 | speedvitals.com | skipped | Competitive speed-test SaaS |
 | 2026-09-13 | corewebvitals.io | excluded | Dropped from batch 3 before send |
-| 2026-09-07 | blog.appsignal.com | draft / guest pitch | Guest-writer pitch finalized to editorial@appsignal.com — confirm before treating as sent |
 | 2026-09-06 | devopsdigest.com | researched only | Prospect only; not pitched |
 
 ## Changelog
 
 - 2026-09-14 — Initial log created from outreach history through mid-DR batch 4.
 - 2026-09-14 — Reconciled email dates and Notes against Gmail Sent (`m.giannopoulos@apogee.lu`); kinsta.com moved to 2026-09-11.
+- 2026-09-14 — Moved pagespeedmatters.com and appsignal.com from Not sent to Contacted after deeper Sent search.
