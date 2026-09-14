@@ -6,6 +6,8 @@ Product: [Apogee Watcher](https://apogeewatcher.com/) — multi-tenant PageSpeed
 
 Voice reference: [writing_voice.md](./writing_voice.md)
 
+Outreach contact log: [apogee-watcher-outreach-contact-log.md](./apogee-watcher-outreach-contact-log.md) — every publisher contacted and when.
+
 Research and outreach window: September 2026
 
 ---
