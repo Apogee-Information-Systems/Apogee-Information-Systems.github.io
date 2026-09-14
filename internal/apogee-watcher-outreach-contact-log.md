@@ -27,9 +27,9 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 | 2026-09-12 | giddsmedia.com | 12 Best Website Performance Monitoring Tools for 2025 — https://giddsmedia.com/website-performance-monitoring-tools/ | Email | hello@giddsmedia.com | article-update | Mid-DR batch 1 |
 | 2026-09-12 | delante.co | How to Check Core Web Vitals — https://delante.co/how-to-check-core-web-vitals/ | Email | info@delante.co | article-update | Mid-DR batch 2 |
 | 2026-09-12 | w3era.com | 5 Free Website Speed Test Tools 2026 — https://www.w3era.com/blog/seo/5-free-website-speed-test-tools/ | Email | sales@w3era.com | article-update | Mid-DR batch 2 |
-| 2026-09-12 | 1digitalagency.com | Core Web Vitals for Shopify Stores 2026 Playbook | Email | info@1digitalagency.com | article-update | Mid-DR batch 2; Shopify Watcher posts cited |
-| 2026-09-12 | weblogic.ie | How to Measure Core Web Vitals & Monitor Site Speed | Email | jack@weblogic.ie | article-update | Mid-DR batch 2 |
-| 2026-09-12 | kogifi.com | Top 12 Website Performance Monitoring Tools 2026 | Email | contact@kogifi.com | article-update | Mid-DR batch 2 |
+| 2026-09-12 | 1digitalagency.com | Core Web Vitals for Shopify Stores 2026 Playbook — https://www.1digitalagency.com/blog/core-web-vitals-for-shopify-stores-2026-benchmarks-and-optimization-playbook-33932/ | Email | info@1digitalagency.com | article-update | Mid-DR batch 2; Shopify Watcher posts cited |
+| 2026-09-12 | weblogic.ie | How to Measure Core Web Vitals & Monitor Site Speed — https://weblogic.ie/blog/how-to-measure-core-web-vitals/ | Email | jack@weblogic.ie | article-update | Mid-DR batch 2 |
+| 2026-09-12 | kogifi.com | Top 12 Website Performance Monitoring Tools 2026 — https://www.kogifi.com/articles/website-performance-monitoring-tools | Email | contact@kogifi.com | article-update | Mid-DR batch 2 |
 | 2026-09-13 | belovdigital.agency | How to Monitor WordPress Performance Metrics — https://belovdigital.agency/how-to-monitor-wordpress-performance-metrics/ | Email | hi@belovdigital.agency | article-update | Mid-DR batch 3 |
 | 2026-09-13 | o8.agency | Best Page Speed Test Tools (2025) — https://www.o8.agency/blog/website-speed-testing/best-page-speed-testing-tools | Email | sethv@o8.agency | article-update | Mid-DR batch 3 |
 | 2026-09-13 | opace.agency | Best Website Speed Test Tools & Performance Tips — https://opace.agency/guide/website-speed/ | Email | info@opace.co.uk | article-update | Mid-DR batch 3 |
