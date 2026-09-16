@@ -43,6 +43,11 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 | 2026-09-14 | 12amagency.com | How to Track Core Web Vitals for SEO Success: The 2026 Analytics Guide — https://12amagency.com/blog/how-to-track-core-web-vitals-for-seo-success/ | Email | sales@12amagency.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:10Z |
 | 2026-09-14 | overthetopseo.com | Core Web Vitals 2026: The Ultimate Technical SEO Checklist — https://www.overthetopseo.com/core-web-vitals-2026-ultimate-technical-seo-checklist/ | Email | guy@overthetopseo.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:25Z |
 | 2026-09-14 | directom.com | Which Site Speed Tool is Better? Google PageSpeed Insights vs Pingdom — https://www.directom.com/google-pagespeed-insights-vs-pingdom/ | Email | info@directom.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:35Z |
+| 2026-09-16 | ttoydigital.agency | Core web vitals: a practical guide for webmasters — https://ttoydigital.agency/blog/core-web-vitals | Email | hello@ttoydigital.agency | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:33Z |
+| 2026-09-16 | 1solutions.biz | 10 Best Tools to Test and Monitor Core Web Vitals Performance — https://www.1solutions.biz/10-best-tools-to-test-and-monitor-core-web-vitals-performance | Email | atul@1solutions.biz (cc info@1solutions.biz) | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:48Z |
+| 2026-09-16 | dynomapper.com | Top 15 Tools for Measuring Website or Application Speed — https://dynomapper.com/blog/search-engine-optimization/top-15-tools-for-measuring-website-or-application-speed/ | Email | info@dynomapper.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:58Z |
+| 2026-09-16 | semetrical.com | 4 Top Tips to Improve Core Web Vitals Auditing — https://www.semetrical.com/tips-to-improve-core-web-vitals-auditing/ | Email | info@semetrical.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:18:11Z |
+| 2026-09-16 | lazarinastoy.com | Accelerate Page Experience & CWV Reporting with Data Studio — https://lazarinastoy.com/accelerate-your-page-experience-reporting-core-web-vitals-data-studio-dashboard/ | Contact form | https://lazarinastoy.com/contact/ | article-update | Mid-DR batch 5; form submitted 2026-09-16 (no Gmail Sent row) |
 
 ## Not sent / skipped (do not treat as contacted)
 
@@ -58,3 +63,4 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 - 2026-09-14 — Initial log created from outreach history through mid-DR batch 4.
 - 2026-09-14 — Reconciled email dates and Notes against Gmail Sent (`m.giannopoulos@apogee.lu`); kinsta.com moved to 2026-09-11.
 - 2026-09-14 — Moved pagespeedmatters.com and appsignal.com from Not sent to Contacted after deeper Sent search.
+- 2026-09-16 — Added mid-DR batch 5: four email pitches verified from Gmail Sent; lazarinastoy.com logged as contact form submitted same day.
