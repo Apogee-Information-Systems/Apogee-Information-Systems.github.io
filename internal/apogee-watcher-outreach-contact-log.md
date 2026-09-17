@@ -13,7 +13,7 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 3. Status values: `sent` | `form submitted` | `draft only` | `skipped` | `reply` | `link live`.
 4. Keep drafts / skips in a short notes section so we do not confuse them with sent outreach.
 
-> Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14. Calendar dates use the Sent timestamp (UTC). Alphonso Labs was a contact form (no Sent row).
+> Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14 and 2026-09-17. Calendar dates use the Sent timestamp (UTC). Alphonso Labs and lazarinastoy.com were contact forms (no Sent row).
 
 ## Contacted (sent or form submitted)
 
@@ -47,7 +47,32 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 | 2026-09-16 | 1solutions.biz | 10 Best Tools to Test and Monitor Core Web Vitals Performance — https://www.1solutions.biz/10-best-tools-to-test-and-monitor-core-web-vitals-performance | Email | atul@1solutions.biz (cc info@1solutions.biz) | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:48Z |
 | 2026-09-16 | dynomapper.com | Top 15 Tools for Measuring Website or Application Speed — https://dynomapper.com/blog/search-engine-optimization/top-15-tools-for-measuring-website-or-application-speed/ | Email | info@dynomapper.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:58Z |
 | 2026-09-16 | semetrical.com | 4 Top Tips to Improve Core Web Vitals Auditing — https://www.semetrical.com/tips-to-improve-core-web-vitals-auditing/ | Email | info@semetrical.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:18:11Z |
+| 2026-09-16 | pilotdigital.com | Core Web Vitals Dashboard: A Google Data Studio Template | Email | info@pilotdigital.com | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:01Z; Dear-version resent 2026-09-17T14:41:57Z |
+| 2026-09-16 | cleancommit.io | How to measure your website's core web vitals | Email | hello@cleancommit.io | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:10Z; Dear-version resent 2026-09-17T14:41:52Z |
+| 2026-09-16 | engageweb.co.uk | Google Core Web Vitals: What is First Input Delay (FID)? | Email | hello@engageweb.co.uk | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:16Z; Dear-version resent 2026-09-17T14:42:07Z |
+| 2026-09-16 | salt.agency | What are Core Web Vitals? — https://salt.agency/blog/what-are-core-web-vitals/ | Email | hello@salt.agency | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:22Z |
 | 2026-09-16 | lazarinastoy.com | Accelerate Page Experience & CWV Reporting with Data Studio — https://lazarinastoy.com/accelerate-your-page-experience-reporting-core-web-vitals-data-studio-dashboard/ | Contact form | https://lazarinastoy.com/contact/ | article-update | Mid-DR batch 5; form submitted 2026-09-16 (no Gmail Sent row) |
+| 2026-09-17 | growth-rocket.com | Agency performance playbook | Email | hello@growth-rocket.com (cc info@apogeewatcher.com) | article-update | Batch 7; Sent 2026-09-17T14:37:25Z |
+| 2026-09-17 | elmntl.co | Website performance testing tools | Email | hello@elmntl.co | article-update | Batch 7; Sent 2026-09-17T14:38:42Z |
+| 2026-09-17 | meteoraweb.com | CWV in GSC LCP FID CLS | Email | info@meteoraweb.com | article-update | Batch 7; Sent 2026-09-17T14:39:09Z |
+| 2026-09-17 | adigital.co.uk | Page Experience Report GSC | Email | hello@adigital.co.uk | article-update | Batch 7; Sent 2026-09-17T14:39:25Z |
+| 2026-09-17 | agiledigitalagency.com | Improve CWV for SEO | Email | hello@agiledigitalagency.com | article-update | Batch 7; Sent 2026-09-17T14:39:29Z |
+| 2026-09-17 | inetventures.com | GTmetrix speed post | Email | hello@inetventures.com | article-update | Batch 7; Sent 2026-09-17T14:39:42Z |
+| 2026-09-17 | marketingagency.sg | PageSpeed Insights Tutorial | Email | hello@marketingagency.sg | article-update | Batch 7; Sent 2026-09-17T14:39:50Z |
+| 2026-09-17 | indexwebmarketing.com | Google Ranking Factors 2021 CWV | Email | info@indexwebmarketing.com | article-update | Batch 7; Sent 2026-09-17T14:39:55Z |
+| 2026-09-17 | non.agency | Shopify SEO Checklist 2026 | Email | hello@non.agency | article-update | Batch 7; Sent 2026-09-17T14:40:02Z |
+| 2026-09-17 | webfor.com | Page Speed Experience CWV | Email | hello@webfor.com | article-update | Batch 7; Sent 2026-09-17T14:40:24Z |
+| 2026-09-17 | ga.agency | Google's CWV update — https://ga.agency/en/googles-core-web-vitals-update-is-out-what-now/ | Email | hello@ga.agency | article-update | Batch 7; Sent 2026-09-17T14:40:32Z |
+| 2026-09-17 | logicade.io | Free Website Speed Audit — https://logicade.io/free-website-speed-audit/ | Email | Info@logicade.io | article-update | Batch 7; Sent 2026-09-17T14:40:41Z |
+| 2026-09-17 | hallme.com | FID explainer — https://www.hallme.com/blog/core-web-vitals-first-input-delay-fid/ | Email | sales@hallme.com | article-update | Batch 7; Sent 2026-09-17T14:40:45Z |
+| 2026-09-17 | seovendor.co | 10 Must-Have SEO Tools for Agencies CWV — https://seovendor.co/10-must-have-seo-tools-for-agencies-to-improve-core-web-vitals/ | Email | ask@seovendor.co | article-update | Batch 7; Sent 2026-09-17T14:40:52Z |
+| 2026-09-17 | resignal.com | LCP FID CLS optimisation — https://resignal.com/blog/how-to-optimise-your-website-for-core-web-vitals-lcp-fid-cls/ | Email | enquiries@resignal.com | article-update | Batch 7; Sent 2026-09-17T14:40:57Z |
+| 2026-09-17 | found.co.uk | CWV Guide for SEOs — https://www.found.co.uk/blog/core-web-vitals-a-guide/ | Email | info@found.co.uk | article-update | Batch 7; Sent 2026-09-17T14:41:11Z |
+| 2026-09-17 | webaloha.co | CWV What They Are and How to Fix — https://webaloha.co/core-web-vitals-what-they-are-how-to-fix/ | Email | yes@webaloha.co | article-update | Batch 7; Sent 2026-09-17T14:41:25Z |
+| 2026-09-17 | silverbackstrategies.com | CWV SEO Priority — https://www.silverbackstrategies.com/blog/core-web-vitals-seo-should-be-a-priority/ | Email | info@silverbackstrategies.com | article-update | Batch 7; Sent 2026-09-17T14:41:30Z |
+| 2026-09-17 | goinflow.com | 5 Strategies to Improve CWV — https://www.goinflow.com/blog/improve-core-web-vitals/ | Email | info@goinflow.com | article-update | Batch 7; Sent 2026-09-17T14:41:34Z |
+| 2026-09-17 | koozai.com | Google tools vs GTmetrix CWV — https://www.koozai.com/blog/search-marketing/checking-and-fixing-core-web-vitals-with-google-tools-vs-gt-metrix/ | Email | info@koozai.com | article-update | Batch 7; Sent 2026-09-17T14:41:39Z |
+| 2026-09-17 | absolute.digital | Core Web Vitals guide (INP + ongoing monitoring) — https://absolute.digital/insights/core-web-vitals-a-guide-for-seos-and-businesses/ | Email | hello@absolute.digital | article-update | Batch 7; Sent 2026-09-17T14:41:44Z |
 
 ## Not sent / skipped (do not treat as contacted)
 
@@ -64,3 +89,4 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 - 2026-09-14 — Reconciled email dates and Notes against Gmail Sent (`m.giannopoulos@apogee.lu`); kinsta.com moved to 2026-09-11.
 - 2026-09-14 — Moved pagespeedmatters.com and appsignal.com from Not sent to Contacted after deeper Sent search.
 - 2026-09-16 — Added mid-DR batch 5: four email pitches verified from Gmail Sent; lazarinastoy.com logged as contact form submitted same day.
+- 2026-09-17 — Added Batch 6 KEEP (4 domains) and Batch 7 (21 new domains), all verified from Gmail Sent; Dear-greeting resends on 2026-09-17 for engageweb.co.uk, cleancommit.io, and pilotdigital.com (one row per domain, earliest Sent date).
