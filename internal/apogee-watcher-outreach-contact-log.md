@@ -15,14 +15,36 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 
 > Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14, 2026-09-17, and 2026-09-19. Calendar dates use Sent timestamps (UTC in Notes). Alphonso Labs and lazarinastoy.com were contact forms (no Sent row).
 
+## Response rate
+
+As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (unique domains).
+
+| Metric | Value |
+|--------|-------|
+| Sent (unique domains) | **103** |
+| Delivered | **102** |
+| Human replies | **4** |
+| **Response rate** | **≈ 3.92%** (4 / 102 delivered) |
+
+**Rate line:** Sent 103 · Delivered 102 · Replies 4 · **≈ 3.92%**
+
+- **Includes contact forms:** Alphonso Labs (alphonsolabs.com) and Lazarina Stoy (lazarinastoy.com). Alphonso Labs **must** stay in sent + replies.
+- **Hard bounce (1 domain):** wishdesk.com (support@ and info@ both 550).
+- **Human replies (4):** Kinsta (soft no); Nimblechapps ($250 paid insert declined, trial offered); WeltPixel (Leo — organic collab pending); Alphonso Labs / InfoWick (Ram — CrUX Vis updated, $95 Top-10 paid declined, trial offered).
+- **Auto-acks / ticket auto-replies NOT counted:** plumrocket, iwdagency, bsscommerce (and similar auto ticket-acks).
+- **Excluded from this metric:** guest-post (appsignal.com); nitroPack (draft-only / skipped — not in Sent).
+- **Optional batch breakdown:** earlier cohort ≈ 1.96% counting Kinsta only among email-delivered earlier domains (≈1/51); **Alphonso Labs form + reply sits in the earlier cohort** and is included in the primary 3.92% (with that reply, earlier ≈ 3.77% = 2/53). B8 ≈ 4.17% (1/24 delivered; Nimblechapps). B9 ≈ 4.00% (1/25; WeltPixel).
+
+*Update this section whenever Sent pitches or human replies change.*
+
 ## Contacted (sent or form submitted)
 
 | Date | Domain | Article / target | Channel | Contact | Type | Notes |
 |------|--------|------------------|---------|---------|------|-------|
 | 2026-09-07 | appsignal.com | Writer application: CWV field data alongside app monitoring | Email | editorial@appsignal.com | guest-post | Sent 2026-09-07T17:00:48Z |
-| 2026-09-11 | alphonsolabs.com | Best Website Speed Test Tools & Core Web Vitals 2026 | Contact form | https://www.alphonsolabs.com/contact/ | article-update | Form confirmation: message sent successfully |
+| 2026-09-11 | alphonsolabs.com | Best Website Speed Test Tools & Core Web Vitals 2026 | Contact form | https://www.alphonsolabs.com/contact/ | article-update | Form confirmation: message sent successfully. REPLY 2026-09-15T19:36:06Z from Ram (support@infowick.com, InfoWick): CrUX Dashboard entry updated to CrUX Vis; Top-10 paid list insert offered at $95. Markos replied 2026-09-19T12:13:38Z declining paid placements, offered longer-term editorial relationship + 2-mo Watcher trial. Outcome: CrUX Vis updated; $95 Top-10 declined; trial offered. |
 | 2026-09-11 | pagespeedmatters.com | Best speed testing tools, bulk RUM & monitoring (2026) | Email | ms@pagespeedmatters.com | article-update | Subject: Complementary take on your 2026 agency monitoring stack guide; Sent 2026-09-11T17:01:52Z |
-| 2026-09-11 | kinsta.com | How to Properly Run a Website Speed Test | Email | contact@kinsta.com | article-update | Retire outdated tools + scheduled PSI+CrUX; Sent 2026-09-11T18:25:18Z |
+| 2026-09-11 | kinsta.com | How to Properly Run a Website Speed Test | Email | contact@kinsta.com | article-update | Retire outdated tools + scheduled PSI+CrUX; Sent 2026-09-11T18:25:18Z. REPLY 2026-09-14T10:11:53Z from contact@kinsta.com: not planning to add further resources to existing articles (soft no). |
 | 2026-09-12 | elementor.com | How to Test Website Speed in 2026 | Email | media@elementor.com | article-update | Managed PSI+CrUX after one-off tools; Sent 2026-09-12T08:34:57Z |
 | 2026-09-12 | cloudways.com | How to Improve Core Web Vitals | Email | pr@cloudways.com | article-update | FID→INP + agency monitoring; Sent 2026-09-12T08:37:31Z |
 | 2026-09-12 | giddsmedia.com | 12 Best Website Performance Monitoring Tools for 2025 | Email | hello@giddsmedia.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:26Z |
@@ -120,7 +142,7 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 | 2026-09-19 | fmeextensions.com | — | Email | support@fmeextensions.com | article-update | Batch 9; Sent 2026-09-19T10:03:10Z |
 | 2026-09-19 | magenest.com | — | Email | sales@magenest.com | article-update | Batch 9; Sent 2026-09-19T10:03:15Z |
 | 2026-09-19 | builtvisible.com | — | Email | connect@builtvisible.com | article-update | Batch 9; Sent 2026-09-19T10:03:20Z |
-| 2026-09-19 | weltpixel.com | Magento 2 Speed Optimization: Pearl Theme & Core Web Vitals | Email | support@weltpixel.com | article-update | Batch 9; Sent 2026-09-19T10:03:26Z; ticket 58175 auto-ack + support reply same day. |
+| 2026-09-19 | weltpixel.com | Magento 2 Speed Optimization: Pearl Theme & Core Web Vitals | Email | support@weltpixel.com | article-update | Batch 9; Sent 2026-09-19T10:03:26Z; ticket 58175. REPLY 2026-09-19T16:04:28Z from Leo (support@weltpixel.com): no paid placements; open to organic collab around flat-priced conversion tracking app (not Pearl Theme). Markos replied 2026-09-19T17:20:53Z offering app mention on https://apogeewatcher.com/blog/core-web-vitals-benchmarks-for-magento-stores-2026-data in exchange for guest CWV + automated-monitoring article on their blog. Outcome pending. |
 | 2026-09-19 | mgt-commerce.com | — | Email | contact@mgt-commerce.com | article-update | Batch 9; Sent 2026-09-19T10:03:35Z |
 | 2026-09-19 | bsscommerce.com | — | Email | sales@bsscommerce.com | article-update | Batch 9; Sent 2026-09-19T10:03:41Z |
 
@@ -141,3 +163,5 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 - 2026-09-16 — Added mid-DR batch 5: four email pitches verified from Gmail Sent; lazarinastoy.com logged as contact form submitted same day.
 - 2026-09-17 — Added Batch 6 KEEP (4 domains) and Batch 7 (21 new domains), all verified from Gmail Sent; Dear-greeting resends on 2026-09-17 for engageweb.co.uk, cleancommit.io, and pilotdigital.com (one row per domain, earliest Sent date).
 - 2026-09-19 — Added Batch 8 (25) and Batch 9 (25) from Gmail Sent; nimblechapps reply (paid-link declined); wishdesk dual bounce; weltpixel ticket.
+- 2026-09-19 — WeltPixel ticket 58175: Leo pivoted to organic collab on flat-priced conversion tracking app (not Pearl); Markos reply sent 2026-09-19T17:20:53Z (app mention ↔ guest CWV article); outcome pending.
+- 2026-09-19 — Added Response rate section (Sent 103 · Delivered 102 · Replies 4 · ≈ 3.92%; includes Alphonso Labs form); Alphonso Labs / InfoWick (Ram) reply notes; Kinsta soft-no note.
