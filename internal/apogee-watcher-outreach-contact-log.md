@@ -13,45 +13,45 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 3. Status values: `sent` | `form submitted` | `draft only` | `skipped` | `reply` | `link live`.
 4. Keep drafts / skips in a short notes section so we do not confuse them with sent outreach.
 
-> Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14 and 2026-09-17. Calendar dates use the Sent timestamp (UTC). Alphonso Labs and lazarinastoy.com were contact forms (no Sent row).
+> Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14, 2026-09-17, and 2026-09-19. Calendar dates use Sent timestamps (UTC in Notes). Alphonso Labs and lazarinastoy.com were contact forms (no Sent row).
 
 ## Contacted (sent or form submitted)
 
 | Date | Domain | Article / target | Channel | Contact | Type | Notes |
 |------|--------|------------------|---------|---------|------|-------|
 | 2026-09-07 | appsignal.com | Writer application: CWV field data alongside app monitoring | Email | editorial@appsignal.com | guest-post | Sent 2026-09-07T17:00:48Z |
-| 2026-09-11 | alphonsolabs.com | Best Website Speed Test Tools & Core Web Vitals 2026 — https://www.alphonsolabs.com/best-website-speed-test-tools-core-web-vitals-2026/ | Contact form | https://www.alphonsolabs.com/contact/ | article-update | Form confirmation: message sent successfully |
-| 2026-09-11 | pagespeedmatters.com | Best speed testing tools, bulk RUM & monitoring (2026) — https://www.pagespeedmatters.com/resources/blog/best-speed-testing-tools-bulk-rum-monitoring-2026 | Email | ms@pagespeedmatters.com | article-update | Subject: Complementary take on your 2026 agency monitoring stack guide; Sent 2026-09-11T17:01:52Z |
-| 2026-09-11 | kinsta.com | How to Properly Run a Website Speed Test — https://kinsta.com/blog/website-speed-test/ | Email | contact@kinsta.com | article-update | Retire outdated tools + scheduled PSI+CrUX; Sent 2026-09-11T18:25:18Z |
-| 2026-09-12 | elementor.com | How to Test Website Speed in 2026 — https://elementor.com/blog/how-to-test-website-speed-guide/ | Email | media@elementor.com | article-update | Managed PSI+CrUX after one-off tools; Sent 2026-09-12T08:34:57Z |
-| 2026-09-12 | cloudways.com | How to Improve Core Web Vitals — https://www.cloudways.com/blog/core-web-vitals/ | Email | pr@cloudways.com | article-update | FID→INP + agency monitoring; Sent 2026-09-12T08:37:31Z |
-| 2026-09-12 | giddsmedia.com | 12 Best Website Performance Monitoring Tools for 2025 — https://giddsmedia.com/website-performance-monitoring-tools/ | Email | hello@giddsmedia.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:26Z |
-| 2026-09-12 | webdesignatny.com | Top 12 Website Performance Monitoring Tools for 2026 — https://www.webdesignatny.com/website-performance-monitoring-tools/ | Email | info@webdesignatny.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:35Z |
-| 2026-09-12 | tamethebots.com | Web Vitals, World Wide — https://tamethebots.com/blog-n-bits/web-vitals-world-wide | Email | dave@tamethebots.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:44Z |
-| 2026-09-12 | webtonic.io | Report or Repair? 20 Website Speed Tools Compared (2026) — https://www.webtonic.io/blog/best-website-speed-performance-tools | Email | editorial@webtonic.io | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:53Z |
-| 2026-09-12 | delante.co | How to Check Core Web Vitals — https://delante.co/how-to-check-core-web-vitals/ | Email | info@delante.co | article-update | Mid-DR batch 2; Sent 2026-09-12T15:41:34Z |
-| 2026-09-12 | w3era.com | 5 Free Website Speed Test Tools 2026 — https://www.w3era.com/blog/seo/5-free-website-speed-test-tools/ | Email | sales@w3era.com | article-update | Mid-DR batch 2; Sent 2026-09-12T15:41:44Z |
-| 2026-09-12 | 1digitalagency.com | Core Web Vitals for Shopify Stores 2026 Playbook — https://www.1digitalagency.com/blog/core-web-vitals-for-shopify-stores-2026-benchmarks-and-optimization-playbook-33932/ | Email | info@1digitalagency.com | article-update | Mid-DR batch 2; Shopify Watcher posts cited; Sent 2026-09-12T15:41:54Z |
-| 2026-09-12 | weblogic.ie | How to Measure Core Web Vitals & Monitor Site Speed — https://weblogic.ie/blog/how-to-measure-core-web-vitals/ | Email | jack@weblogic.ie | article-update | Mid-DR batch 2; Sent 2026-09-12T15:41:59Z |
-| 2026-09-12 | kogifi.com | Top 12 Website Performance Monitoring Tools 2026 — https://www.kogifi.com/articles/website-performance-monitoring-tools | Email | contact@kogifi.com | article-update | Mid-DR batch 2; Sent 2026-09-12T15:42:05Z |
-| 2026-09-13 | opace.agency | Best Website Speed Test Tools & Performance Tips — https://opace.agency/guide/website-speed/ | Email | info@opace.co.uk | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:22Z |
-| 2026-09-13 | m-w.co.uk | Ultimate Guide to Core Web Vitals — https://www.m-w.co.uk/about-us/blog/the-ultimate-guide-to-core-web-vitals | Email | richard.hunter@m-w.co.uk | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:30Z |
-| 2026-09-13 | o8.agency | Best Page Speed Test Tools (2025) — https://www.o8.agency/blog/website-speed-testing/best-page-speed-testing-tools | Email | sethv@o8.agency | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:35Z |
-| 2026-09-13 | belovdigital.agency | How to Monitor WordPress Performance Metrics — https://belovdigital.agency/how-to-monitor-wordpress-performance-metrics/ | Email | hi@belovdigital.agency | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:41Z |
-| 2026-09-14 | websitesusa.com | The 12 Best Website Performance Monitoring Tools for 2026 — https://websitesusa.com/website-performance-monitoring-tools/ | Email | hello@websitesusa.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:47:41Z |
-| 2026-09-14 | linkilo.co | Best Website Speed Test Tools in 2026 — https://linkilo.co/blog/best-free-website-speed-test-tools/ | Email | info@linkilo.co | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:00Z |
-| 2026-09-14 | 12amagency.com | How to Track Core Web Vitals for SEO Success: The 2026 Analytics Guide — https://12amagency.com/blog/how-to-track-core-web-vitals-for-seo-success/ | Email | sales@12amagency.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:10Z |
-| 2026-09-14 | overthetopseo.com | Core Web Vitals 2026: The Ultimate Technical SEO Checklist — https://www.overthetopseo.com/core-web-vitals-2026-ultimate-technical-seo-checklist/ | Email | guy@overthetopseo.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:25Z |
-| 2026-09-14 | directom.com | Which Site Speed Tool is Better? Google PageSpeed Insights vs Pingdom — https://www.directom.com/google-pagespeed-insights-vs-pingdom/ | Email | info@directom.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:35Z |
-| 2026-09-16 | ttoydigital.agency | Core web vitals: a practical guide for webmasters — https://ttoydigital.agency/blog/core-web-vitals | Email | hello@ttoydigital.agency | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:33Z |
-| 2026-09-16 | 1solutions.biz | 10 Best Tools to Test and Monitor Core Web Vitals Performance — https://www.1solutions.biz/10-best-tools-to-test-and-monitor-core-web-vitals-performance | Email | atul@1solutions.biz (cc info@1solutions.biz) | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:48Z |
-| 2026-09-16 | dynomapper.com | Top 15 Tools for Measuring Website or Application Speed — https://dynomapper.com/blog/search-engine-optimization/top-15-tools-for-measuring-website-or-application-speed/ | Email | info@dynomapper.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:58Z |
-| 2026-09-16 | semetrical.com | 4 Top Tips to Improve Core Web Vitals Auditing — https://www.semetrical.com/tips-to-improve-core-web-vitals-auditing/ | Email | info@semetrical.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:18:11Z |
+| 2026-09-11 | alphonsolabs.com | Best Website Speed Test Tools & Core Web Vitals 2026 | Contact form | https://www.alphonsolabs.com/contact/ | article-update | Form confirmation: message sent successfully |
+| 2026-09-11 | pagespeedmatters.com | Best speed testing tools, bulk RUM & monitoring (2026) | Email | ms@pagespeedmatters.com | article-update | Subject: Complementary take on your 2026 agency monitoring stack guide; Sent 2026-09-11T17:01:52Z |
+| 2026-09-11 | kinsta.com | How to Properly Run a Website Speed Test | Email | contact@kinsta.com | article-update | Retire outdated tools + scheduled PSI+CrUX; Sent 2026-09-11T18:25:18Z |
+| 2026-09-12 | elementor.com | How to Test Website Speed in 2026 | Email | media@elementor.com | article-update | Managed PSI+CrUX after one-off tools; Sent 2026-09-12T08:34:57Z |
+| 2026-09-12 | cloudways.com | How to Improve Core Web Vitals | Email | pr@cloudways.com | article-update | FID→INP + agency monitoring; Sent 2026-09-12T08:37:31Z |
+| 2026-09-12 | giddsmedia.com | 12 Best Website Performance Monitoring Tools for 2025 | Email | hello@giddsmedia.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:26Z |
+| 2026-09-12 | webdesignatny.com | Top 12 Website Performance Monitoring Tools for 2026 | Email | info@webdesignatny.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:35Z |
+| 2026-09-12 | tamethebots.com | Web Vitals, World Wide | Email | dave@tamethebots.com | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:44Z |
+| 2026-09-12 | webtonic.io | Report or Repair? 20 Website Speed Tools Compared (2026) | Email | editorial@webtonic.io | article-update | Mid-DR batch 1; Sent 2026-09-12T09:19:53Z |
+| 2026-09-12 | delante.co | How to Check Core Web Vitals | Email | info@delante.co | article-update | Mid-DR batch 2; Sent 2026-09-12T15:41:34Z |
+| 2026-09-12 | w3era.com | 5 Free Website Speed Test Tools 2026 | Email | sales@w3era.com | article-update | Mid-DR batch 2; Sent 2026-09-12T15:41:44Z |
+| 2026-09-12 | 1digitalagency.com | Core Web Vitals for Shopify Stores 2026 Playbook | Email | info@1digitalagency.com | article-update | Mid-DR batch 2; Shopify Watcher posts cited; Sent 2026-09-12T15:41:54Z |
+| 2026-09-12 | weblogic.ie | How to Measure Core Web Vitals & Monitor Site Speed | Email | jack@weblogic.ie | article-update | Mid-DR batch 2; Sent 2026-09-12T15:41:59Z |
+| 2026-09-12 | kogifi.com | Top 12 Website Performance Monitoring Tools 2026 | Email | contact@kogifi.com | article-update | Mid-DR batch 2; Sent 2026-09-12T15:42:05Z |
+| 2026-09-13 | opace.agency | Best Website Speed Test Tools & Performance Tips | Email | info@opace.co.uk | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:22Z |
+| 2026-09-13 | m-w.co.uk | Ultimate Guide to Core Web Vitals | Email | richard.hunter@m-w.co.uk | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:30Z |
+| 2026-09-13 | o8.agency | Best Page Speed Test Tools (2025) | Email | sethv@o8.agency | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:35Z |
+| 2026-09-13 | belovdigital.agency | How to Monitor WordPress Performance Metrics | Email | hi@belovdigital.agency | article-update | Mid-DR batch 3; Sent 2026-09-13T14:04:41Z |
+| 2026-09-14 | websitesusa.com | The 12 Best Website Performance Monitoring Tools for 2026 | Email | hello@websitesusa.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:47:41Z |
+| 2026-09-14 | linkilo.co | Best Website Speed Test Tools in 2026 | Email | info@linkilo.co | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:00Z |
+| 2026-09-14 | 12amagency.com | How to Track Core Web Vitals for SEO Success: The 2026 Analytics Guide | Email | sales@12amagency.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:10Z |
+| 2026-09-14 | overthetopseo.com | Core Web Vitals 2026: The Ultimate Technical SEO Checklist | Email | guy@overthetopseo.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:25Z |
+| 2026-09-14 | directom.com | Which Site Speed Tool is Better? Google PageSpeed Insights vs Pingdom | Email | info@directom.com | article-update | Mid-DR batch 4; Sent 2026-09-14T08:50:35Z |
+| 2026-09-16 | ttoydigital.agency | Core web vitals: a practical guide for webmasters | Email | hello@ttoydigital.agency | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:33Z |
+| 2026-09-16 | 1solutions.biz | 10 Best Tools to Test and Monitor Core Web Vitals Performance | Email | atul@1solutions.biz (cc info@1solutions.biz) | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:48Z |
+| 2026-09-16 | dynomapper.com | Top 15 Tools for Measuring Website or Application Speed | Email | info@dynomapper.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:17:58Z |
+| 2026-09-16 | semetrical.com | 4 Top Tips to Improve Core Web Vitals Auditing | Email | info@semetrical.com | article-update | Mid-DR batch 5; Sent 2026-09-16T18:18:11Z |
 | 2026-09-16 | pilotdigital.com | Core Web Vitals Dashboard: A Google Data Studio Template | Email | info@pilotdigital.com | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:01Z; Dear-version resent 2026-09-17T14:41:57Z |
 | 2026-09-16 | cleancommit.io | How to measure your website's core web vitals | Email | hello@cleancommit.io | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:10Z; Dear-version resent 2026-09-17T14:41:52Z |
 | 2026-09-16 | engageweb.co.uk | Google Core Web Vitals: What is First Input Delay (FID)? | Email | hello@engageweb.co.uk | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:16Z; Dear-version resent 2026-09-17T14:42:07Z |
-| 2026-09-16 | salt.agency | What are Core Web Vitals? — https://salt.agency/blog/what-are-core-web-vitals/ | Email | hello@salt.agency | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:22Z |
-| 2026-09-16 | lazarinastoy.com | Accelerate Page Experience & CWV Reporting with Data Studio — https://lazarinastoy.com/accelerate-your-page-experience-reporting-core-web-vitals-data-studio-dashboard/ | Contact form | https://lazarinastoy.com/contact/ | article-update | Mid-DR batch 5; form submitted 2026-09-16 (no Gmail Sent row) |
+| 2026-09-16 | salt.agency | What are Core Web Vitals? | Email | hello@salt.agency | article-update | Batch 6 KEEP; Sent 2026-09-16T20:47:22Z |
+| 2026-09-16 | lazarinastoy.com | Accelerate Page Experience & CWV Reporting with Data Studio | Contact form | https://lazarinastoy.com/contact/ | article-update | Mid-DR batch 5; form submitted 2026-09-16 (no Gmail Sent row) |
 | 2026-09-17 | growth-rocket.com | Agency performance playbook | Email | hello@growth-rocket.com (cc info@apogeewatcher.com) | article-update | Batch 7; Sent 2026-09-17T14:37:25Z |
 | 2026-09-17 | elmntl.co | Website performance testing tools | Email | hello@elmntl.co | article-update | Batch 7; Sent 2026-09-17T14:38:42Z |
 | 2026-09-17 | meteoraweb.com | CWV in GSC LCP FID CLS | Email | info@meteoraweb.com | article-update | Batch 7; Sent 2026-09-17T14:39:09Z |
@@ -62,17 +62,67 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 | 2026-09-17 | indexwebmarketing.com | Google Ranking Factors 2021 CWV | Email | info@indexwebmarketing.com | article-update | Batch 7; Sent 2026-09-17T14:39:55Z |
 | 2026-09-17 | non.agency | Shopify SEO Checklist 2026 | Email | hello@non.agency | article-update | Batch 7; Sent 2026-09-17T14:40:02Z |
 | 2026-09-17 | webfor.com | Page Speed Experience CWV | Email | hello@webfor.com | article-update | Batch 7; Sent 2026-09-17T14:40:24Z |
-| 2026-09-17 | ga.agency | Google's CWV update — https://ga.agency/en/googles-core-web-vitals-update-is-out-what-now/ | Email | hello@ga.agency | article-update | Batch 7; Sent 2026-09-17T14:40:32Z |
-| 2026-09-17 | logicade.io | Free Website Speed Audit — https://logicade.io/free-website-speed-audit/ | Email | Info@logicade.io | article-update | Batch 7; Sent 2026-09-17T14:40:41Z |
-| 2026-09-17 | hallme.com | FID explainer — https://www.hallme.com/blog/core-web-vitals-first-input-delay-fid/ | Email | sales@hallme.com | article-update | Batch 7; Sent 2026-09-17T14:40:45Z |
-| 2026-09-17 | seovendor.co | 10 Must-Have SEO Tools for Agencies CWV — https://seovendor.co/10-must-have-seo-tools-for-agencies-to-improve-core-web-vitals/ | Email | ask@seovendor.co | article-update | Batch 7; Sent 2026-09-17T14:40:52Z |
-| 2026-09-17 | resignal.com | LCP FID CLS optimisation — https://resignal.com/blog/how-to-optimise-your-website-for-core-web-vitals-lcp-fid-cls/ | Email | enquiries@resignal.com | article-update | Batch 7; Sent 2026-09-17T14:40:57Z |
-| 2026-09-17 | found.co.uk | CWV Guide for SEOs — https://www.found.co.uk/blog/core-web-vitals-a-guide/ | Email | info@found.co.uk | article-update | Batch 7; Sent 2026-09-17T14:41:11Z |
-| 2026-09-17 | webaloha.co | CWV What They Are and How to Fix — https://webaloha.co/core-web-vitals-what-they-are-how-to-fix/ | Email | yes@webaloha.co | article-update | Batch 7; Sent 2026-09-17T14:41:25Z |
-| 2026-09-17 | silverbackstrategies.com | CWV SEO Priority — https://www.silverbackstrategies.com/blog/core-web-vitals-seo-should-be-a-priority/ | Email | info@silverbackstrategies.com | article-update | Batch 7; Sent 2026-09-17T14:41:30Z |
-| 2026-09-17 | goinflow.com | 5 Strategies to Improve CWV — https://www.goinflow.com/blog/improve-core-web-vitals/ | Email | info@goinflow.com | article-update | Batch 7; Sent 2026-09-17T14:41:34Z |
-| 2026-09-17 | koozai.com | Google tools vs GTmetrix CWV — https://www.koozai.com/blog/search-marketing/checking-and-fixing-core-web-vitals-with-google-tools-vs-gt-metrix/ | Email | info@koozai.com | article-update | Batch 7; Sent 2026-09-17T14:41:39Z |
-| 2026-09-17 | absolute.digital | Core Web Vitals guide (INP + ongoing monitoring) — https://absolute.digital/insights/core-web-vitals-a-guide-for-seos-and-businesses/ | Email | hello@absolute.digital | article-update | Batch 7; Sent 2026-09-17T14:41:44Z |
+| 2026-09-17 | ga.agency | Google's CWV update | Email | hello@ga.agency | article-update | Batch 7; Sent 2026-09-17T14:40:32Z |
+| 2026-09-17 | logicade.io | Free Website Speed Audit | Email | Info@logicade.io | article-update | Batch 7; Sent 2026-09-17T14:40:41Z |
+| 2026-09-17 | hallme.com | FID explainer | Email | sales@hallme.com | article-update | Batch 7; Sent 2026-09-17T14:40:45Z |
+| 2026-09-17 | seovendor.co | 10 Must-Have SEO Tools for Agencies CWV | Email | ask@seovendor.co | article-update | Batch 7; Sent 2026-09-17T14:40:52Z |
+| 2026-09-17 | resignal.com | LCP FID CLS optimisation | Email | enquiries@resignal.com | article-update | Batch 7; Sent 2026-09-17T14:40:57Z |
+| 2026-09-17 | found.co.uk | CWV Guide for SEOs | Email | info@found.co.uk | article-update | Batch 7; Sent 2026-09-17T14:41:11Z |
+| 2026-09-17 | webaloha.co | CWV What They Are and How to Fix | Email | yes@webaloha.co | article-update | Batch 7; Sent 2026-09-17T14:41:25Z |
+| 2026-09-17 | silverbackstrategies.com | CWV SEO Priority | Email | info@silverbackstrategies.com | article-update | Batch 7; Sent 2026-09-17T14:41:30Z |
+| 2026-09-17 | goinflow.com | 5 Strategies to Improve CWV | Email | info@goinflow.com | article-update | Batch 7; Sent 2026-09-17T14:41:34Z |
+| 2026-09-17 | koozai.com | Google tools vs GTmetrix CWV | Email | info@koozai.com | article-update | Batch 7; Sent 2026-09-17T14:41:39Z |
+| 2026-09-17 | absolute.digital | Core Web Vitals guide (INP + ongoing monitoring) | Email | hello@absolute.digital | article-update | Batch 7; Sent 2026-09-17T14:41:44Z |
+| 2026-09-18 | seo-kreativ.de | — | Email | admin@seo-kreativ.de | article-update | Batch 8; Sent 2026-09-18T08:15:32Z |
+| 2026-09-18 | webexperts.com | — | Email | elliott@webexperts.com | article-update | Batch 8; Sent 2026-09-18T08:15:44Z |
+| 2026-09-18 | brambla.co.uk | — | Email | hello@brambla.co.uk | article-update | Batch 8; Sent 2026-09-18T08:15:53Z |
+| 2026-09-18 | nextdigitalagency.com | — | Email | hello@nextdigitalagency.com | article-update | Batch 8; Sent 2026-09-18T08:16:04Z |
+| 2026-09-18 | sapidagency.com | — | Email | visibility@sapidagency.com | article-update | Batch 8; Sent 2026-09-18T08:16:18Z |
+| 2026-09-18 | edmondscommerce.co.uk | — | Email | info@edmondscommerce.co.uk | article-update | Batch 8; Sent 2026-09-18T08:16:28Z |
+| 2026-09-18 | agnikii.co.uk | — | Email | hello@agnikii.co.uk | article-update | Batch 8; Sent 2026-09-18T08:16:37Z |
+| 2026-09-18 | redcmarketing.com | — | Email | chat@redcmarketing.com | article-update | Batch 8; Sent 2026-09-18T08:16:48Z |
+| 2026-09-18 | nimblechapps.com | Core Web Vitals: A Comprehensive Guide to Create a Better User Experience | Email | contact@nimblechapps.com | article-update | Batch 8; Sent 2026-09-18T08:16:57Z; REPLY 2026-09-18T08:25:04Z from keval@nimblechapps.com (Keval Padia CEO): "We charge 250 USD for link insertion."; Markos replied 2026-09-18T09:32:11Z declining paid inserts, offered editorial relationship + 2-mo trial. Outcome: declined paid link; trial open; no further reply. |
+| 2026-09-18 | virtina.com | — | Email | hello@virtina.com | article-update | Batch 8; Sent 2026-09-18T08:29:25Z |
+| 2026-09-18 | seocom.agency | — | Email | hola@seocom.agency | article-update | Batch 8; Sent 2026-09-18T08:29:36Z |
+| 2026-09-18 | befoundonline.com | — | Email | info@befoundonline.com | article-update | Batch 8; Sent 2026-09-18T08:29:47Z |
+| 2026-09-18 | wishdesk.com | First Input Delay | Email | support@wishdesk.com | article-update | Batch 8; support@ bounced 550 at 08:31:56Z; info@ resent 08:37:24Z also bounced. Undeliverable. |
+| 2026-09-18 | irpr.agency | — | Email | hello@irpr.agency | article-update | Batch 8; Sent 2026-09-18T08:32:05Z |
+| 2026-09-18 | foozagency.com | — | Email | hello@foozagency.com | article-update | Batch 8; Sent 2026-09-18T08:32:11Z |
+| 2026-09-18 | ositcom.com | — | Email | info@ositcom.com | article-update | Batch 8; Sent 2026-09-18T08:32:20Z |
+| 2026-09-18 | skalum.agency | — | Email | hello@skalum.agency | article-update | Batch 8; Sent 2026-09-18T08:33:00Z |
+| 2026-09-18 | workshopdigital.com | — | Email | hello@workshopdigital.com | article-update | Batch 8; Sent 2026-09-18T08:33:10Z |
+| 2026-09-18 | provenroi.com | — | Email | sales@provenroi.com | article-update | Batch 8; Sent 2026-09-18T08:33:19Z |
+| 2026-09-18 | simpalm.com | — | Email | contact@simpalm.com | article-update | Batch 8; Sent 2026-09-18T08:33:26Z |
+| 2026-09-18 | atomicsocial.com | — | Email | success@atomicsocial.com | article-update | Batch 8; Sent 2026-09-18T08:33:47Z |
+| 2026-09-18 | reflectdigital.co.uk | — | Email | hello@reflectdigital.co.uk | article-update | Batch 8; Sent 2026-09-18T08:33:54Z |
+| 2026-09-18 | in-sync.io | — | Email | hello@in-sync.io | article-update | Batch 8; Sent 2026-09-18T08:34:03Z |
+| 2026-09-18 | bejamas.com | — | Email | sales@bejamas.com | article-update | Batch 8; Sent 2026-09-18T08:34:12Z |
+| 2026-09-18 | sureoak.com | — | Email | hello@sureoak.com | article-update | Batch 8; Sent 2026-09-18T08:34:20Z |
+| 2026-09-19 | foundationcommerce.co.uk | — | Email | hello@foundationcommerce.co.uk | article-update | Batch 9; Sent 2026-09-19T09:58:03Z |
+| 2026-09-19 | pressidium.com | — | Email | info@techio.com | article-update | Batch 9; Sent 2026-09-19T09:58:11Z |
+| 2026-09-19 | bemeir.com | — | Email | info@bemeir.com | article-update | Batch 9; Sent 2026-09-19T09:58:24Z |
+| 2026-09-19 | webgenix.co.uk | — | Email | info@webgenix.co.uk | article-update | Batch 9; Sent 2026-09-19T09:58:44Z |
+| 2026-09-19 | swiftotter.com | — | Email | contact@swiftotter.com | article-update | Batch 9; Sent 2026-09-19T09:58:56Z |
+| 2026-09-19 | jajuma.de | — | Email | info@jajuma.de | article-update | Batch 9; Sent 2026-09-19T09:59:02Z |
+| 2026-09-19 | goivvy.com | — | Email | sales@goivvy.com | article-update | Batch 9; Sent 2026-09-19T09:59:09Z |
+| 2026-09-19 | mackman.co.uk | — | Email | customerservice@mackmangroup.co.uk | article-update | Batch 9; Sent 2026-09-19T09:59:14Z |
+| 2026-09-19 | relevantaudience.com | — | Email | info@relevantaudience.com | article-update | Batch 9; Sent 2026-09-19T09:59:22Z |
+| 2026-09-19 | classyllama.com | — | Email | sales@classyllama.com | article-update | Batch 9; Sent 2026-09-19T09:59:29Z |
+| 2026-09-19 | icecubedigital.com | — | Email | hello@icecubedigital.com | article-update | Batch 9; Sent 2026-09-19T09:59:45Z |
+| 2026-09-19 | belvg.com | — | Email | contact@belvg.com | article-update | Batch 9; Sent 2026-09-19T09:59:51Z |
+| 2026-09-19 | plumrocket.com | — | Email | support@plumrocket.com | article-update | Batch 9; Sent 2026-09-19T09:59:55Z |
+| 2026-09-19 | cssauthor.com | — | Email | mail@cssauthor.com | article-update | Batch 9; Sent 2026-09-19T10:00:12Z |
+| 2026-09-19 | aureatelabs.com | — | Email | hello@aureatelabs.com | article-update | Batch 9; Sent 2026-09-19T10:00:19Z |
+| 2026-09-19 | firebearstudio.com | — | Email | info@firebearstudio.com | article-update | Batch 9; Sent 2026-09-19T10:00:26Z |
+| 2026-09-19 | iwdagency.com | — | Email | hi@iwdagency.com | article-update | Batch 9; Sent 2026-09-19T10:02:57Z |
+| 2026-09-19 | onilab.com | — | Email | talkto@onilab.com | article-update | Batch 9; Sent 2026-09-19T10:03:01Z |
+| 2026-09-19 | commerce-ui.com | — | Email | hello@commerce-ui.com | article-update | Batch 9; Sent 2026-09-19T10:03:04Z |
+| 2026-09-19 | fmeextensions.com | — | Email | support@fmeextensions.com | article-update | Batch 9; Sent 2026-09-19T10:03:10Z |
+| 2026-09-19 | magenest.com | — | Email | sales@magenest.com | article-update | Batch 9; Sent 2026-09-19T10:03:15Z |
+| 2026-09-19 | builtvisible.com | — | Email | connect@builtvisible.com | article-update | Batch 9; Sent 2026-09-19T10:03:20Z |
+| 2026-09-19 | weltpixel.com | Magento 2 Speed Optimization: Pearl Theme & Core Web Vitals | Email | support@weltpixel.com | article-update | Batch 9; Sent 2026-09-19T10:03:26Z; ticket 58175 auto-ack + support reply same day. |
+| 2026-09-19 | mgt-commerce.com | — | Email | contact@mgt-commerce.com | article-update | Batch 9; Sent 2026-09-19T10:03:35Z |
+| 2026-09-19 | bsscommerce.com | — | Email | sales@bsscommerce.com | article-update | Batch 9; Sent 2026-09-19T10:03:41Z |
 
 ## Not sent / skipped (do not treat as contacted)
 
@@ -90,3 +140,4 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 - 2026-09-14 — Moved pagespeedmatters.com and appsignal.com from Not sent to Contacted after deeper Sent search.
 - 2026-09-16 — Added mid-DR batch 5: four email pitches verified from Gmail Sent; lazarinastoy.com logged as contact form submitted same day.
 - 2026-09-17 — Added Batch 6 KEEP (4 domains) and Batch 7 (21 new domains), all verified from Gmail Sent; Dear-greeting resends on 2026-09-17 for engageweb.co.uk, cleancommit.io, and pilotdigital.com (one row per domain, earliest Sent date).
+- 2026-09-19 — Added Batch 8 (25) and Batch 9 (25) from Gmail Sent; nimblechapps reply (paid-link declined); wishdesk dual bounce; weltpixel ticket.
