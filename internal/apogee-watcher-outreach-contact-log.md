@@ -19,7 +19,7 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 
 As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (unique domains).
 
-|| Metric | Value |
+| Metric | Value |
 |--------|-------|
 | Sent (unique domains) | **103** |
 | Delivered | **102** |
@@ -39,7 +39,7 @@ As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (
 
 ## Contacted (sent or form submitted)
 
-|| Date | Domain | Article / target | Channel | Contact | Type | Notes |
+| Date | Domain | Article / target | Channel | Contact | Type | Notes |
 |------|--------|------------------|---------|---------|------|-------|
 | 2026-09-07 | appsignal.com | Writer application: CWV field data alongside app monitoring | Email | editorial@appsignal.com | guest-post | Sent 2026-09-07T17:00:48Z |
 | 2026-09-11 | alphonsolabs.com | Best Website Speed Test Tools & Core Web Vitals 2026 | Contact form | https://www.alphonsolabs.com/contact/ | article-update | Form confirmation: message sent successfully. REPLY 2026-09-15T19:36:06Z from Ram (support@infowick.com, InfoWick): CrUX Dashboard entry updated to CrUX Vis; Top-10 paid list insert offered at $95. Markos replied 2026-09-19T12:13:38Z declining paid placements, offered longer-term editorial relationship + 2-mo Watcher trial. Outcome: CrUX Vis updated; $95 Top-10 declined; trial offered. |
@@ -148,7 +148,7 @@ As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (
 
 ## Not sent / skipped (do not treat as contacted)
 
-|| Date noted | Domain | Status | Notes |
+| Date noted | Domain | Status | Notes |
 |------------|--------|--------|-------|
 | 2026-09-11 | nitropack.io | skipped / draft only | DR76+ partner form skipped; clarifying email stayed draft |
 | 2026-09-12 | speedvitals.com | skipped | Competitive speed-test SaaS |
