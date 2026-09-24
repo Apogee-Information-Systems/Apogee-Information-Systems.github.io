@@ -13,29 +13,32 @@ Related: [apogee-watcher-backlink-playbook.md](./apogee-watcher-backlink-playboo
 3. Status values: `sent` | `form submitted` | `draft only` | `skipped` | `reply` | `link live`.
 4. Keep drafts / skips in a short notes section so we do not confuse them with sent outreach.
 
-> Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14, 2026-09-17, and 2026-09-19. Calendar dates use Sent timestamps (UTC in Notes). Alphonso Labs and lazarinastoy.com were contact forms (no Sent row).
+> Dates below for email pitches were verified against Gmail Sent (`m.giannopoulos@apogee.lu`) on 2026-09-14, 2026-09-17, 2026-09-19, 2026-09-20, and 2026-09-24. Calendar dates use Sent timestamps (UTC in Notes). Alphonso Labs and lazarinastoy.com were contact forms (no Sent row).
 
 ## Response rate
 
-As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (unique domains).
+As of **2026-09-24** (CEST afternoon) — **article-update / blog pitches only** (unique domains).
 
 | Metric | Value |
 |--------|-------|
-| Sent (unique domains) | **103** |
-| Delivered | **102** |
-| Human replies | **4** |
-| **Response rate** | **≈ 3.92%** (4 / 102 delivered) |
+| Sent (unique domains) | **175** |
+| Delivered | **171** |
+| Human replies | **8** |
+| **Response rate** | **≈ 4.68%** (8 / 171 delivered) |
 
-**Rate line:** Sent 103 · Delivered 102 · Replies 4 · **≈ 3.92%**
+**Rate line:** Sent 175 · Delivered 171 · Replies 8 · **≈ 4.68%**
 
 - **Includes contact forms:** Alphonso Labs (alphonsolabs.com) and Lazarina Stoy (lazarinastoy.com). Alphonso Labs **must** stay in sent + replies.
-- **Hard bounce (1 domain):** wishdesk.com (support@ and info@ both 550).
-- **Human replies (4):** Kinsta (soft no); Nimblechapps ($250 paid insert declined, trial offered); WeltPixel (Leo — organic collab pending); Alphonso Labs / InfoWick (Ram — CrUX Vis updated, $95 Top-10 paid declined, trial offered).
-- **Auto-acks / ticket auto-replies NOT counted:** plumrocket, iwdagency, bsscommerce (and similar auto ticket-acks).
+- **Hard bounces (4 domains):** wishdesk.com (support@ and info@ both 550); rivuletiq.com (info@ 550, 2026-09-24); wpscaleup.com (info@ 550, 2026-09-24); sproutsagesolutions.com (hello@ address not found, 2026-09-24).
+- **Human replies (8):** Kinsta (soft no); Nimblechapps ($250 paid insert declined, trial offered); WeltPixel (Leo — organic collab pending marketing); Alphonso Labs / InfoWick (Ram — CrUX Vis updated, $95 Top-10 paid declined, trial offered); cssauthor.com (mail@ — paid insert $90/link, unanswered as of 2026-09-24); magefan.com (Viktoriia / support@ — soft no, content plan fully booked); cedcommerce.com (support@ — soft no, not interested); landofcoder.com (info@ — asked for paragraph + 2-mo trial; Markos replied 2026-09-24 ~12:19 CEST with paragraph + trial/report link).
+- **Auto-acks / ticket auto-replies NOT counted:** plumrocket, iwdagency, bsscommerce, mageplaza/magedelight ticket closed, amasty, webkul ticket, WP Engine (deliciousbrains), and similar.
 - **Excluded from this metric:** guest-post (appsignal.com); nitroPack (draft-only / skipped — not in Sent).
-- **Optional batch breakdown:** earlier cohort ≈ 1.96% counting Kinsta only among email-delivered earlier domains (≈1/51); **Alphonso Labs form + reply sits in the earlier cohort** and is included in the primary 3.92% (with that reply, earlier ≈ 3.77% = 2/53). B8 ≈ 4.17% (1/24 delivered; Nimblechapps). B9 ≈ 4.00% (1/25; WeltPixel).
+- **Batch notes:** B10 sent 2026-09-20; B11+B12 sent 2026-09-24. After appending, **recount** unique article-update domains in Contacted for Sent; Delivered = Sent − hard-bounce domains; Replies = human replies listed. Expected ≈ Sent 175 / Delivered 171 / Replies 8 / ≈4.68% if +72 new unique. No sends 2026-09-21–23.
 
 *Update this section whenever Sent pitches or human replies change.*
+
+Math: prior 103 + 72 new = 175 sent; hard bounces 1 prior (wishdesk) + 3 new = 4; delivered 171; replies 4 prior + cssauthor + magefan + cedcommerce + landofcoder = 8.
+
 
 ## Contacted (sent or form submitted)
 
@@ -133,7 +136,7 @@ As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (
 | 2026-09-19 | icecubedigital.com | — | Email | hello@icecubedigital.com | article-update | Batch 9; Sent 2026-09-19T09:59:45Z |
 | 2026-09-19 | belvg.com | — | Email | contact@belvg.com | article-update | Batch 9; Sent 2026-09-19T09:59:51Z |
 | 2026-09-19 | plumrocket.com | — | Email | support@plumrocket.com | article-update | Batch 9; Sent 2026-09-19T09:59:55Z |
-| 2026-09-19 | cssauthor.com | — | Email | mail@cssauthor.com | article-update | Batch 9; Sent 2026-09-19T10:00:12Z |
+| 2026-09-19 | cssauthor.com | — | Email | mail@cssauthor.com | article-update | Batch 9; Sent 2026-09-19T10:00:12Z. REPLY 2026-09-20 ~14:42 CEST from mail@cssauthor.com: paid insert $90/link. Markos not answered as of 2026-09-24. |
 | 2026-09-19 | aureatelabs.com | — | Email | hello@aureatelabs.com | article-update | Batch 9; Sent 2026-09-19T10:00:19Z |
 | 2026-09-19 | firebearstudio.com | — | Email | info@firebearstudio.com | article-update | Batch 9; Sent 2026-09-19T10:00:26Z |
 | 2026-09-19 | iwdagency.com | — | Email | hi@iwdagency.com | article-update | Batch 9; Sent 2026-09-19T10:02:57Z |
@@ -142,9 +145,81 @@ As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (
 | 2026-09-19 | fmeextensions.com | — | Email | support@fmeextensions.com | article-update | Batch 9; Sent 2026-09-19T10:03:10Z |
 | 2026-09-19 | magenest.com | — | Email | sales@magenest.com | article-update | Batch 9; Sent 2026-09-19T10:03:15Z |
 | 2026-09-19 | builtvisible.com | — | Email | connect@builtvisible.com | article-update | Batch 9; Sent 2026-09-19T10:03:20Z |
-| 2026-09-19 | weltpixel.com | Magento 2 Speed Optimization: Pearl Theme & Core Web Vitals | Email | support@weltpixel.com | article-update | Batch 9; Sent 2026-09-19T10:03:26Z; ticket 58175. REPLY 2026-09-19T16:04:28Z from Leo (support@weltpixel.com): no paid placements; open to organic collab around flat-priced conversion tracking app (not Pearl Theme). Markos replied 2026-09-19T17:20:53Z offering app mention on https://apogeewatcher.com/blog/core-web-vitals-benchmarks-for-magento-stores-2026-data in exchange for guest CWV + automated-monitoring article on their blog. Outcome pending. |
+| 2026-09-19 | weltpixel.com | Magento 2 Speed Optimization: Pearl Theme & Core Web Vitals | Email | support@weltpixel.com | article-update | Batch 9; Sent 2026-09-19T10:03:26Z; ticket 58175. REPLY 2026-09-19T16:04:28Z from Leo (support@weltpixel.com): no paid placements; open to organic collab around flat-priced conversion tracking app (not Pearl Theme). Markos replied 2026-09-19T17:20:53Z offering app mention on https://apogeewatcher.com/blog/core-web-vitals-benchmarks-for-magento-stores-2026-data in exchange for guest CWV + automated-monitoring article on their blog. Outcome pending. FOLLOW-UP 2026-09-20 ~12:06 CEST from Leo: proposal passed to marketing; ticket closed. No further Markos reply after that as of 2026-09-24. Outcome still pending marketing. |
 | 2026-09-19 | mgt-commerce.com | — | Email | contact@mgt-commerce.com | article-update | Batch 9; Sent 2026-09-19T10:03:35Z |
 | 2026-09-19 | bsscommerce.com | — | Email | sales@bsscommerce.com | article-update | Batch 9; Sent 2026-09-19T10:03:41Z |
+| 2026-09-20 | mirasvit.com | How to Improve PageSpeed Insights Score in Magento 2 | Email | sales@mirasvit.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | onely.com | First Input Delay: A Complete Guide to Optimizing FID | Email | hello@onely.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | magefan.com | Understanding Google PageSpeed Insights: Complete Guide | Email | support@magefan.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). REPLY 2026-09-21 ~11:47 CEST from Viktoriia (support@magefan.com): soft no — content plan fully booked; may revisit. Markos not answered as of 2026-09-24. |
+| 2026-09-20 | magedelight.com | Magento 2 Performance Optimization Guide: Checklist & Tips | Email | support@magedelight.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). Auto ticket-ack / ticket closed (not counted as human reply). |
+| 2026-09-20 | codeatoz.com | Best Magento Core Web Vitals Guide — LCP INP CLS (2026) | Email | support@codeatoz.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | cedcommerce.com | Magento Store Optimisation Services to speed up your store | Email | support@cedcommerce.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). REPLY 2026-09-21 ~10:07 CEST from support@cedcommerce.com: soft no — not interested in this service. Markos not answered as of 2026-09-24. |
+| 2026-09-20 | unlimitedwp.com | 7 Ways to Improve your Core Web Vitals | Email | hello@unlimitedwp.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | yireo.com | How to destroy your Lighthouse score with Hyvä | Email | info@yireo.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | magestore.com | 11 Ways to Speed up Magento Website | Email | info@magestore.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | walkersands.com | How to Prepare Your Website for Google’s New Core Web Vitals Scores | Email | hello@walkersands.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | bruceclay.com | How to Improve Core Web Vitals “FID” for SEO | Email | sales-bc@bruceclay.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | linkgraph.com | Advanced Core Web Vitals: Diagnose, Prioritize & Fix for Real Users | Email | hello@linkgraph.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | meetanshi.com | How to Improve Magento Core Web Vitals? - Expert Tips | Email | help@meetanshi.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | mageworx.com | 5 Essential Tips to Improve Your Magento 2 TTFB | Email | support@mageworx.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | creatuity.com | Adobe Commerce INP Optimization: Fix Interaction to Next Paint for Faster Stores | Email | contact@creatuity.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | windandkite.com | How a performance audit can improve your Magento Core Web Vitals | Email | hello@windandkite.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | cartcoders.com | Shopify Core Web Vitals Audit: Fix INP First (2026) | Email | contact@cartcoders.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | suttoncommerce.co.uk | Shopify Core Web Vitals Optimisation Guide | Email | hello@suttoncommerce.co.uk | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | scandiweb.com | Improving Core Web Vitals with Hyvä / Läderach Case Study | Email | info@scandiweb.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | atlasmktg.us | Technical SEO for Shopify in 2026: Core Web Vitals, INP Fixes, and Site Speed | Email | antony@atlasmktg.us | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | profiletree.com | Core Web Vitals: 3 Proven Fixes for UK Websites | Email | hello@profiletree.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | americaneagle.com | What Are Core Web Vitals? Why They Still Matter for SEO | Email | info@americaneagle.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | flatlineagency.com | Fixing INP on Shopify: The Fix-Order Checklist | Email | info@flatlineagency.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-20 | mageplaza.com | 8 Effective Ways to Enhance Magento 2 Page Speed | Email | support@mageplaza.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). Auto ticket-ack / ticket closed (not counted as human reply). |
+| 2026-09-20 | thriveagency.com | Core Web Vitals & Google Page Experience Guide | Email | sales@thriveagency.com | article-update | Batch 10; Sent 2026-09-20 (CEST; verified Gmail Sent). |
+| 2026-09-24 | amasty.com | GTmetrix Guide: How to Analyze and Improve Website Performance | Email | support@amasty.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). Auto ticket-ack (not counted as human reply). |
+| 2026-09-24 | outerboxdesign.com | Page Speed SEO: Metrics That Matter for Rankings and UX | Email | info@outerbox.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | deliciousbrains.com | Optimizing WordPress for Core Web Vitals | Email | nom@deliciousbrains.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). Auto-ack via WP Engine ticket (not counted as human reply). |
+| 2026-09-24 | sitecare.com | PageSpeed Insights: Google’s Highly Misunderstood Diagnostic Tool | Email | hello@sitecare.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | smartsites.com | Increasing Website Speed With LINK Tags | Email | contact@smartsites.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | 2hatslogic.com | Shopify Core Web Vitals Optimization Guide (2025 Edition) | Email | info@2hatslogic.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | peasoupdigital.co.uk | Core Web Vitals for Shopify: Technical Optimisation Guide | Email | hello@peasoupdigital.co.uk | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | emmo.net.co | Boost Magento Core Web Vitals in 2025: Complete Performance Optimization Guide | Email | sales@emmo.net.co | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | forma.agency | Google PageSpeed — how we speeded up FORMA's website | Email | info@forma.agency | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | landofcoder.com | How To Optimize Website For Core Web Vitals | Email | info@landofcoder.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). REPLY 2026-09-24 ~10:50 CEST from info@landofcoder.com: asked for paragraph + 2-month trial details. Markos replied ~12:19 CEST with paragraph + trial/report link. |
+| 2026-09-24 | witscode.com | INP on Shopify: The Core Web Vital Fixing LCP Won't Save You From | Email | info@witscode.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | ideatogrowth.com | Core Web Vitals Audit: A Florida Business Owner’s Guide to a Faster, More Profitable Website | Email | kenneth@ideatogrowth.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | mbadv.agency | What Is Technical SEO? Core Web Vitals & Schema (2026) | Email | account@mbadv.agency | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | brad-holmes.co.uk | Core Web Vitals: What Still Matters and What Doesn’t | Email | studio@brad-holmes.co.uk | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | webkul.com | Magento 2 speed optimization techniques | Email | sales@webkul.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). Auto ticket-ack (not counted as human reply). |
+| 2026-09-24 | munro.agency | Web Vitals and Web Performance Guide for Faster, Smarter Websites | Email | glasgow@munro.agency | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | kishansavaliya.com | Magento Core Web Vitals: The Actual LCP, INP & CLS Recipe | Email | kishansavaliyakb@gmail.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | modpagespeed.com | Fix INP on Magento 2: why Hyvä beats a JS rewriter | Email | info@we-amp.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | hustlemarketers.com | Magento Speed Optimization: How to Make a Slow Store Fast | Email | info@hustlemarketers.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | thresholdagency.com | Google’s Web Metric Changes: A Deep Dive | Email | info@thresholdagency.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | hyva.io | Core Web Vitals 101 | Email | info@hyva.io | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | dckap.com | Exclude specific script to Move bottom - Magento Developer's Solution | Email | info@dckap.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | pressable.com | How To Improve Core Web Vitals on Your WordPress Site | Email | sales@pressable.com | article-update | Batch 11; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | searchperformancemarketing.com | Core Web Vitals and Rankings: Does Page Speed Still Matter in 2026? | Email | thevoiceofcash@gmail.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | seomods.com | Core Web Vitals & Page Speed: A 2025 Guide | Email | info@seomods.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | rivuletiq.com | Core Web Vitals in 2026: What’s Changed and How to Pass | Email | info@rivuletiq.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). HARD BOUNCE 2026-09-24 ~12:50 CEST — info@ 550 address not found. Undeliverable. |
+| 2026-09-24 | hallam.agency | How we deliver 100% mobile speed scores and top CWV on WordPress | Email | info@hallam.co.uk | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | spotdev.co.uk | How to Run a Website Performance Audit (2026 Checklist) | Email | hello@spotdev.co.uk | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | commerce.fabrity.com | Core Web Vitals – improve the score of Magento First Input Delay (FID) and Cumulative Layout Shift (CLS) | Email | commerce@fabrity.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | magento-services.com | Magento 2 Speed Optimization | Email | info@magento-services.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | seosalla.com | Mastering Measuring Site Speed: Tools and Tips Unveiled | Email | info@seosalla.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | stackoptic.com | How to Test Your Website Speed: Tools & Metrics | Email | info@stackoptic.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | pressforge.co.uk | How We Got Our Agency Site to PageSpeed 100 | Email | team@pressforge.co.uk | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | potech.agency | How to Read a Google PageSpeed Insights Report Like a Pro | Email | info@potech.agency | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | key-g.com | Website Speed: Full Guide Using PageSpeed Insights, GTmetrix | Email | Info@key-g.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | cloudswitched.com | Core Web Vitals in 2026: The UK SME Guide to Turning Website Speed into Revenue | Email | info@cloudswitched.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | wonderagency.co.uk | Core Web Vitals Optimisation | Email | hello@wonderagency.co.uk | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | wpwp.bz | Professional Website Optimization | Email | hi@wpwp.bz | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | codecaste.com | Cut Load Times in Half: The 2026 WordPress Speed Optimization Playbook | Email | info@codecaste.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | wpscaleup.com | WordPress Speed Optimization Service / Core Web Vitals Fix | Email | info@wpscaleup.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). HARD BOUNCE 2026-09-24 ~13:00 CEST — info@ 550. Undeliverable. |
+| 2026-09-24 | wpspeedfix.com | Make Your WordPress Site Blazing Fast | Email | questions@wpspeedfix.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | digivate.com | Core Web Vitals (CWV) in 2026: The Technical SEO Checklist That Actually Moves Rankings | Email | hello@digivate.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | megantic.com | Optimising Site Speed for eCommerce Websites | Email | hello@megantic.com.au | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | webgaro.com | How to Measure Core Web Vitals Using PageSpeed Insights | Email | info@webgaro.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | toweringmedia.com | Magento Performance Optimization for Faster Stores | Email | support@toweringmedia.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | develodesign.co.uk | Core Web Vitals: What Are They and Why Do They Matter for Your eCommerce Store | Email | hello@develodesign.co.uk | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). |
+| 2026-09-24 | sproutsagesolutions.com | Core Web Vitals Explained: 3 Free Fixes (LCP, CLS, INP) | Email | hello@sproutsagesolutions.com | article-update | Batch 12; Sent 2026-09-24 (CEST; verified Gmail Sent). HARD BOUNCE 2026-09-24 ~13:00 CEST — hello@ address not found. Undeliverable. |
 
 ## Not sent / skipped (do not treat as contacted)
 
@@ -165,3 +240,4 @@ As of **2026-09-19** (CEST evening) — **article-update / blog pitches only** (
 - 2026-09-19 — Added Batch 8 (25) and Batch 9 (25) from Gmail Sent; nimblechapps reply (paid-link declined); wishdesk dual bounce; weltpixel ticket.
 - 2026-09-19 — WeltPixel ticket 58175: Leo pivoted to organic collab on flat-priced conversion tracking app (not Pearl); Markos reply sent 2026-09-19T17:20:53Z (app mention ↔ guest CWV article); outcome pending.
 - 2026-09-19 — Added Response rate section (Sent 103 · Delivered 102 · Replies 4 · ≈ 3.92%; includes Alphonso Labs form); Alphonso Labs / InfoWick (Ram) reply notes; Kinsta soft-no note.
+- 2026-09-24 — Added Batch 10 (25, sent 2026-09-20) and Batches 11–12 (50, sent 2026-09-24) from Gmail Sent; hard bounces rivuletiq / wpscaleup / sproutsagesolutions; human replies cssauthor ($90), magefan soft no, cedcommerce soft no, landofcoder trial request (Markos replied); WeltPixel marketing handoff note; Response rate → Sent 175 · Delivered 171 · Replies 8 · ≈ 4.68%.
